@@ -1,3 +1,7 @@
+#home-banner img {
+	margin: 0 0 10px 0;
+}
+
 .featured-title {
     border-bottom: 3px solid #000000;
     float: left;
@@ -13,14 +17,20 @@
 }
 
 
-.products-grid li {
+.products-grid .item {
 	list-style: none;
 	float: left;
-	margin: 0 13px 10px 0;
-	background: pink;
+	margin: 0 10px 10px 0;
+	padding: 1px 1px 6px 1px;
+	width: 180px;
+	overflow: hidden;
 }
-.products-grid li.last {
+.products-grid .item.last {
 	margin-right: 0
+}
+.products-grid .item:hover,
+.products-grid .item:focus {
+    background: #e6e6e6; 
 }
 .products-grid a.product-image {
 	float: left;
@@ -29,15 +39,71 @@
 }
 .products-grid .product-name {
 	text-align: center;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: 1px;
+    padding: 24px 4px 6px 4px;
+	font-size: 1.1em;
+}
+.products-grid li.featured {
+	width: 384px;
 }
 .products-grid li.featured a.product-image {
 	float: left;
 	margin: 0 10px 0 0;
 }
 .products-grid li.featured img {
-	width: 260px;
-	height: 260px;
+	width: 220px;
+	height: 220px;
 }
 .products-grid li.featured .prod-grid-desc {
 	float: left;
+	width: 154px;
+}
+
+.product-name a {
+    text-decoration: none;
+}
+.product-name a:hover,
+.product-name a:focus {
+    text-decoration: none;
+}
+
+.price-box {
+    margin: 0 0 6px 0;
+}
+.price-box,
+.price-box p {
+    line-height: 1.2;
+    text-align: center;
+}
+.price-box p {
+    margin: 0;
+}
+.price-box span.price {
+    font-size: 1.1em;
+} 
+
+.price-box .price-label {
+    display: none;
+}
+
+.price-box .old-price,
+.price-box .special-price {
+    display: inline;
+}
+.price-box .old-price .price {
+    margin: 0 6px 0 0;
+}
+
+.price-box .old-price span.price {
+    text-decoration: line-through;
+}
+.price-box .special-price span.price {
+    color: #e70000;
+    margin: 0 6px 0 0;
+}
+
+.products-grid li .actions {
+	text-align: center;
 }

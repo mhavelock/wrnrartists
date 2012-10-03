@@ -1,8 +1,6 @@
 body {
-    margin: 0;
-    font-size: 62.5%;
-	line-height: 1;
 	-webkit-tap-highlight-color:rgba(255,255,255,0.1);
+	font-family: arial, sans-serif;
 }
 
 .wrapper {
@@ -74,7 +72,7 @@ h4, h5, h6 {
 	display: block;
 	width:658px;
 	height:150px;
-	background: beige;
+	background: white;
 }
 #logo a {
 	position: relative;
@@ -483,6 +481,13 @@ nav li {
 	font-size: 1.6em;
 }
 
+
+.main {
+	background: #fff;
+	min-height: 480px;
+	padding: 0 0 20px 0;
+}
+
 /* .page { width:996px; margin:0 auto; text-align:center; } */
 .page-print { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
@@ -510,9 +515,9 @@ nav li {
 .sidebar { min-height:350px; }
 
 /* Base Columns */
-.col-left { float:left; width:196px; padding:20px 0 20px 16px; margin:0; }
-.col-main { float:left; width:749px; padding:20px 16px 20px 16px; background: beige; }
-.col-right { float:right; width:196px; padding:20px 16px 20px 0; margin:0; }
+.col-left { float:left; width:196px; padding:20px 0 20px 16px; }
+.col-main { float:left; width:749px; padding:20px 16px 20px 16px; }
+.col-right { float:right; width:196px; padding:20px 16px 20px 0; }
 
 /* 1 Column Layout */
 .col1-layout { float: left; }
