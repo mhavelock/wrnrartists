@@ -4,6 +4,10 @@ jQuery(function() {
 	html5placeholder();
 	showHide('cartPanel', 'cartBtn');
 	menuCurrentHighlight();
+	
+	tabbedContentFade();
+	
+	
     // twitterGPlus();
     
     // if ($j('#Form').length) {
@@ -11,6 +15,86 @@ jQuery(function() {
 	// };
 	
 });
+
+
+
+function tabbedContentFade() {
+    $j("#tabs").tabs({
+
+        show: function(event, ui) {
+
+            var lastOpenedPanel = $j(this).data("lastOpenedPanel");
+
+            if (!$j(this).data("topPositionTab")) {
+                $j(this).data("topPositionTab", $j(ui.panel).position().top)
+            }         
+
+            //Dont use the builtin fx effects. This will fade in/out both tabs, we dont want that
+            //Fadein the new tab yourself            
+            $j(ui.panel).hide().fadeIn(500);
+
+            if (lastOpenedPanel) {
+
+                // 1. Show the previous opened tab by removing the jQuery UI class
+                // 2. Make the tab temporary position:absolute so the two tabs will overlap
+                // 3. Set topposition so they will overlap if you go from tab 1 to tab 0
+                // 4. Remove position:absolute after animation
+                lastOpenedPanel
+                    .toggleClass("ui-tabs-hide")
+                    .css("position", "absolute")
+                    .css("top", $j(this).data("topPositionTab") + "px")
+                    .fadeOut(500, function() {
+                        $j(this)
+                        .css("position", "");
+                    });
+
+            }
+
+            //Saving the last tab has been opened
+            $j(this).data("lastOpenedPanel", $j(ui.panel));
+
+        }
+
+    });
+}
+
+
+/* Hide Show tabs
+----------------------------------------- */
+function tabbedContent(){
+    $j('.tabs div.tab').css('height','0px'); //Hide all content
+    $j('.tabs div.tab:first').css('height','auto'); //Show first tab content
+
+    $j('.tabList li').click(function(){
+	$j('.tabs div.tab').css('height','0px'); //Hide all tab content
+	var activeTab = $j(this).find('a').attr('href');
+	$j(activeTab).css('height','auto');
+	if($j(this).not('.current')) {
+		$j('.tabList li').removeClass('current');
+		$j(this).addClass('current');
+	}
+	return false;
+    });
+}
+
+
+function tabbedContentFade2()
+{
+    jQuery('.tabs li').click(function(){
+        if(jQuery(this).not('.current')){
+            jQuery('.tabs li').removeClass('current');
+            jQuery(this).addClass('current');
+            var id = jQuery(this).attr('rel');
+
+            jQuery('div#fullWidthHolder div.slide:visible').fadeOut('slow', function(){
+                jQuery('div#fullWidthHolder div#'+id).fadeIn('slow');
+            });
+
+        }
+
+        return false;
+    })
+}
 
 
 

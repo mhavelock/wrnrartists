@@ -16,7 +16,11 @@
    margin: 0;
 }
 
-
+/* Product Grid */
+.main .products-grid {
+	margin: 0 0 18px 0;
+	float: left;
+}
 .products-grid .item {
 	list-style: none;
 	float: left;
@@ -24,6 +28,14 @@
 	padding: 1px 1px 6px 1px;
 	width: 180px;
 	overflow: hidden;
+}
+.large-items .item {
+	margin: 0 10px 10px 0;
+	width: 308px;
+}
+.large-items .item img {
+	width: 308px;
+	height: 308px;
 }
 .products-grid .item.last {
 	margin-right: 0
@@ -42,7 +54,7 @@
     line-height: 1.2;
     margin: 0;
     letter-spacing: 1px;
-    padding: 24px 4px 6px 4px;
+    padding: 0 4px 6px 4px;
 	font-size: 1.1em;
 }
 .products-grid li.featured {
@@ -50,7 +62,7 @@
 }
 .products-grid li.featured a.product-image {
 	float: left;
-	margin: 0 10px 0 0;
+	margin: 0 5px 0 0;
 }
 .products-grid li.featured img {
 	width: 220px;
@@ -59,6 +71,14 @@
 .products-grid li.featured .prod-grid-desc {
 	float: left;
 	width: 154px;
+}
+.products-grid li.featured .product-name,
+.products-grid li.featured .price-box p,
+.products-grid li.featured .actions {
+	text-align: left;
+}
+.products-grid li.featured .product-name {
+	padding: 24px 0 6px 0;
 }
 
 .product-name a {
@@ -107,3 +127,77 @@
 .products-grid li .actions {
 	text-align: center;
 }
+
+.further_details {
+	margin-top: 10px;
+}
+.further_details li {
+	margin-left: 0;
+}
+
+/* Tabs */
+
+/* - Home page tabs - */
+#tabs {
+    clear: both;
+    position: relative;
+    z-index: 2;
+    margin: 0 0 12px 0;
+}
+#tabs .tabs {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+#tabs .tabs li {
+    padding: 0 0 17px 0;
+    margin-bottom: -17px;
+    display: inline-block;
+    font-size: 1.4em;
+    line-height: 1;
+    font-family: Georgia, serif;
+    position: relative;
+}
+#tabs .tabs li span {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+#tabs .tabs li span.r {
+    left: auto;
+    right: 0;
+}
+#tabs .tabs li a {
+    padding: 12px 20px;
+    display: inline-block;
+    color: #999;
+    line-height: 1;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+#tabs .tabs li a:hover,
+#tabs .tabs li.ui-state-active a {
+    color: #333;
+}
+#tabs .tabs li.ui-state-active span {
+    display: inline;
+}
+#tabs .tabs li.ui-state-active {
+    background: url(../img/icons/indicator.png) no-repeat 50% 100%;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+#tabs .tabs li.current span.l {
+    
+}
+#tabs .tabs li.current span.r {
+    
+}
+.ui-tabs .ui-tabs-hide {
+display: none !important;
+}
+.remove-tabs-accessibility {
+	height: 200px;
+	overflow: hidden;
+}
+
