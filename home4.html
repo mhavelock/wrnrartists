@@ -19,19 +19,26 @@
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
         <!--[if gte IE 9]> <style type="text/css"> .gradient { filter: none; } </style> <![endif]-->
     </head>
-    <body class="full-bg">
+    <body>
 		<div class="wrapper">
 			<div class="header-container">
 				<header>
-					<div id="switches">
-						<label>Select Store:</label>
-						<div class="form-language">
-						    <a class="active" href="#" title="Click to Change store language and currency"><img src="img/flags/uk_st.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/eng_eu.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/de_eu.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/es_eu.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/it_eu.png" alt="language/currency"></a>
-						</div> 
+					<div id="switches" class="sbox lngr">
+						<div class="switch switcher-language">
+							<label><span>Select Store</span>:</label>
+							<div class="switch-wrapper" id="languageSelect">
+								<select>
+					                <optgroup label="European Stores">
+									<option value="/de/">Deutsch - Euro</option>
+						           	<option value="/eu/">English - Euro</option>
+						           	<option value="/es/">Español - Euro</option>
+						           	<option value="/fr/">Français - Euro</option>
+						           	<option value="/it/">Italiano - Euro</option>
+									<option value="/en/">English - GBP</option>
+					                </optgroup>
+								</select>
+							</div>
+						</div>
 					</div> <!-- /#switches -->
 					
 					<div class="headerFunctions">
@@ -159,21 +166,11 @@
 				</header>
 			</div>	<!-- /.header-container -->
 			
-			<div class="nav-container">
-				<nav>
-					<ul>
-						<li><a class="default" href="#">Home</a></li>
-						<li><a href="#">Music</a></li>
-						<li><a href="#">Merchandise</a></li>
-						<li><a id="sale" href="#">Sale</a></li>
-					</ul>
-				</nav>
-				
-			</div>	<!-- /.nav-container -->
+
 			
 			<div id="page">	
 				<div class="content">	
-					<div class="main col1-layout">
+					<div class="main col2-left-layout">
 					
 						<div class="col-main">  
 							
@@ -320,111 +317,6 @@
 						                        </div>
 						                    </div>
 										</li>
-										<li class="item">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod04_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<p class="old-price">
-												        	<span class="price">€15.99</span>                
-												        </p>
-												        <p class="special-price">
-												        	<span class="price">€10.99</span>                
-												        </p>
-												    </div>
-						                        </div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
-										</li>
-										<li class="item last">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod03_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<p class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </p>
-												    </div>
-												</div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
-										</li>
-					                </ul>
-					                
-					                
-					                <div class="featured-title">
-								        <h5>Featured products / Bestsellers</h5>
-								    </div>
-    
-									<ul class="products-grid">
-                                    
-						                <li class="item">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod01_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<span class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </span>
-												    </div>
-						                        </div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
-										</li>
-										<li class="item">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod02_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<p class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </p>
-												    </div>
-						                        </div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
-										</li>
-										<li class="item featured">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod03_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<p class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </p>
-												    </div>
-												</div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                        
-						                        <ul class="further_details">
-											    	<li>Lorem ipsum dolor sit amet.</li>
-											    	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-											    	<li>Lorem ipsum dolor sit amet.</li>
-											    </ul>
-
-
-						                    </div>
-										</li>
 										<li class="item last">
 						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod04_170x170.jpg"></a>
 						                    <div class="prod-grid-desc">
@@ -446,16 +338,27 @@
 						                    </div>
 										</li>
 					                </ul>
-					                
-					                
-					                
+
                 				</div> <!-- /.featured-products -->
 							</div> <!-- /.home-content -->
 
 				
 						</div> <!-- /.col-main -->
+						
+						<div class="col-left">
+							<div class="nav-container">
+								<nav>
+									<ul>
+										<li><a href="#">Home</a></li>
+										<li><a href="#">Music</a></li>
+										<li><a href="#">Merchandise</a></li>
+										<li><a id="sale" href="#">Sale</a></li>
+									</ul>
+								</nav>
+							</div>	<!-- /.nav-container -->
+						</div> <!-- /.col-left -->
 					
-					</div> <!-- /.main .col1-layout -->
+					</div> <!-- /.main .col2-left-layout -->
 				</div> <!-- /.content -->
 				
 			</div> <!-- /#page -->

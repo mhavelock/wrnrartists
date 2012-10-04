@@ -7,6 +7,8 @@ jQuery(function() {
 	
 	tabbedContentFade();
 	
+	$j('.sbox select').selectbox(); /* in plugins.js */
+	
 	
     // twitterGPlus();
     
