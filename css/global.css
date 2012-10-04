@@ -133,7 +133,7 @@ h4, h5, h6 {
 	float: right;
 	margin: 0 0 9px 0;
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	background: #ececec;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
