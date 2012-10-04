@@ -384,6 +384,28 @@ display: none !important;
     margin-right: 0;
 }
 
+.col2-left-layoutb #back2site {
+	background: url(../img/icons/arrow_l.png) no-repeat 0 2px;
+	left: 0;
+    top: 6px;
+    padding: 0 0 0 16px;
+    -webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin: 0;
+	color: #aaa;
+}
 
-
+.col2-left-layoutb #switches, .col2-left-layoutb #switches .form-language {
+	float: none;
+	z-index: 2;
+}
+.col2-left-layoutb #switches {
+	clear: both;
+    float: right;
+    margin: 20px 0 12px;
+}
 
