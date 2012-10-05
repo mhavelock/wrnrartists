@@ -493,3 +493,8 @@ body.full-bg  {
 .cart2 .featured-title h5 {
     font-size: 1.8em;
 }
+.cart2 .price-box, .price-box p {
+    color: #777777;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
