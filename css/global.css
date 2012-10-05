@@ -10,7 +10,8 @@ body {
 .header-container,
 .nav-container,
 #page,
-.footer-container {
+.footer-container,
+.logo-container {
 	position: relative;
 	width: 100%;
     margin: 0;
@@ -19,7 +20,8 @@ body {
 header,
 nav,
 .content,
-.footer {
+.footer,
+.logo {
 	position: relative;
 	width: 996px;
     min-width: 996px;
@@ -96,7 +98,6 @@ h4, h5, h6 {
 #switches  {
 	margin: 4px 0 0 0;
 	position: relative;
-	z-index: 1;
 }
 #switches,
 #switches .form-language {
@@ -112,7 +113,7 @@ h4, h5, h6 {
 #switches a {
 	float: left;
 	display: block;
-	margin: 0 9px 0 0;
+	margin: 0;
 	opacity: 0.5;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
 	filter: alpha(opacity=50); /* IE 5-7 */
@@ -139,12 +140,12 @@ h4, h5, h6 {
 /* Cart / Account */
 .headerFunctions {
 	float: right;
+	z-index: 4;
+	position: relative;
 }
 .quick-access {
 	float: right;
 	margin: 0 0 9px 0;
-	position: relative;
-	z-index: 3;
 	background: #ececec;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
@@ -153,7 +154,9 @@ h4, h5, h6 {
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
-
+#accountLinks {
+	clear: both;
+}
 #accountLinks li {
 	font-size: 1.1em;
 }
@@ -489,13 +492,18 @@ nav ul {
 nav li {
 	float: left;
 	margin: 0 10px 0 0;
-	padding: 9px 12px;
-	font-size: 1.6em;
+	padding: 0;
+	font-size: 1.8em;
+}
+nav li a {
+	text-decoration: none;
+	padding: 11px 12px 12px;
+	display: block;
+	float: left;
 }
 .main nav li a {
 	text-decoration: none;
 }
-
 /* Column left layout */
 .col2-left-layout nav  {
 	padding: 12px 0;
@@ -1081,4 +1089,17 @@ div.validation-error select {
 	margin: 0 0 10px 0;
 	padding: 9px 12px ;
 	font-size: 1.4em;
+}
+
+.logo-container {
+	background: #ccc;
+}
+.logo a {
+	float: right;
+	display: block;
+	width:149px;
+	height: 29px;
+	overflow: hidden;
+	text-indent: -999em;
+	background: url(../img/logo.png) no-repeat 0 0;
 }

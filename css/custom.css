@@ -323,3 +323,158 @@ body.full-bg  {
 
 
 
+
+/* CART 2 */
+.cart2 #topCart {
+	width: 326px;
+}
+.cart2 #myBasket {
+	background-image: none;
+	position: relative;
+	float: left;
+}
+.cart2 #cartBtn {
+    background: none;
+    display: block;
+    font-size: 100%;
+    height: auto;
+    line-height: 1.5;
+    padding: 0;
+    float: left;
+}
+.cart2 #cartBtn a {
+	font-size: 1.4em;
+	border-right: 1px solid #ccc;
+	float: left;
+	width: 200px;
+	display: block;
+	padding: 9px 10px 6px 10px;
+}
+.cart2 #cartBtn span {
+	font-weight: bold;
+}
+.cart2 #cartBtn span em {
+	color: #bbb;
+	padding: 0 6px;
+	font-style: normal;
+	font-weight: normal;
+}
+.cart2 #cartBtn span b {
+	color: #555;
+	font-weight: normal;
+	padding: 0 2px 0 0;
+}
+.cart2 #cartBtn em.icon {
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: transparent url(../img/icons/basket.png) no-repeat 0 0;
+	margin: 0 9px 0 0;
+	padding: 0;
+}
+.cart2 #cartBtn .items {
+	text-decoration: underline;
+	padding: 0 5px 0 0;
+	font-weight: normal;
+}
+.cart2 #cartBtn .items em {
+	padding: 0;
+}
+.cart2 #cartBtn a:hover {
+	background: #ccc url(../img/icons/arrow_r.png) no-repeat 204px 15px;
+	text-decoration: none;
+}
+
+.cart2 #chkOutBtn {
+	float: left;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.cart2 .arrowLink {
+	background: transparent url(../img/icons/arrow_r.png) no-repeat 88px 14px;
+	display: block;
+	width: 85px;
+	padding: 13px 9px;
+	float: left;
+}
+.cart2 .arrowLink:hover,
+.cart2 .arrowLink:focus {
+	background: #ccc url(../img/icons/arrow_r.png) no-repeat 90px -16px;
+	text-decoration: none;
+}
+
+.cart2 #myAccountLink {
+	font-size: 1.2em;
+	border-right: 1px solid #ccc;
+	float: left;
+	background-position: 82px 14px;
+}
+.cart2 #myAccountLink:hover,
+.cart2 #myAccountLink:focus {
+	background-position: 82px -16px;
+}
+
+.cart2 #switches {
+    padding: 8px;
+}
+.cart2 #switches label {
+    top: 0;
+}
+
+.cart2 #search_mini_form input#search {
+    width: 251px;
+}    
+   
+.cart2 #back2site {
+	background: #ececec url(../img/icons/arrow_l2.png) no-repeat 5px 9px;
+	left: 0;
+    top: 0;
+    padding: 7px 9px 6px 24px;
+    -webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin: 0;
+	color: #666;
+	font-weight: normal;
+}
+
+.cart2 #cartPanel {
+    top: 40px;
+    width: 327px;
+}
+
+
+.cart2 nav li {
+    float: left;
+    font-size: 1.8em;
+    background: url(../img/icons/tilda2.png) no-repeat 100% 50%;
+    padding-right: 13px;
+    margin-right: 0;
+}
+.cart2 nav li.last {
+    background: none;
+}
+
+
+.cart2 #social {
+	float: left;
+	margin: 26px 0 0 0;
+}
+.cart2 #social a {
+	width: 90px;
+	height: 27px;
+	background: url(../img/icons/social.png) no-repeat 0 0;
+	display: block;
+}
+.cart2 #helpLink {
+	float: right;
+	margin: 36px 0 0 0;
+}
+.cart2 #helpLink a {
+	font-size: 1.4em;
+	text-decoration: underline;
+	color: #555;
+}
