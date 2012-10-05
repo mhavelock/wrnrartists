@@ -355,6 +355,15 @@ display: none !important;
 
 
 
+/* Product Details page */
+
+.more-views ul li {
+	list-style: none;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+
 
 
 .col2-left-layout {}

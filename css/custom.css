@@ -460,7 +460,7 @@ body.full-bg  {
 
 
 .cart2 #social {
-	float: left;
+	float: right;
 	margin: 26px 0 0 0;
 }
 .cart2 #social a {
@@ -472,6 +472,7 @@ body.full-bg  {
 .cart2 #helpLink {
 	float: right;
 	margin: 36px 0 0 0;
+	display: none;
 }
 .cart2 #helpLink a {
 	font-size: 1.4em;

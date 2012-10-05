@@ -19,27 +19,17 @@
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
         <!--[if gte IE 9]> <style type="text/css"> .gradient { filter: none; } </style> <![endif]-->
     </head>
-    <body>
+    <body class="cart2">
 		<div class="wrapper">
 			<div class="header-container">
 				<header>
-					<div id="switches">
-						<label>Select Store:</label>
-						<div class="form-language">
-						    <a class="active" href="#" title="Click to Change store language and currency"><img src="img/flags/uk_st.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/eng_eu.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/de_eu.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/es_eu.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/it_eu.png" alt="language/currency"></a>
-						</div> 
-					</div> <!-- /#switches -->
-					
 					<div class="headerFunctions">
 						<div class="quick-access">
 				            
 				            <div id="topCart">
 				            	<div id="myBasket">
-				            		<a id="cartBtn" href="#"><span>My Basket</span>(0)</a>
+				            		<p id="cartBtn"><a href="#"><em class="icon"></em><span class="items">View <em>(</em>2<em>)</em> items</span><span><em>{</em><b>&pound;</b>999<em>}</em></span></a></p>				            			
+				            		<p id="chkOutBtn"><a class="arrowLink" href="#">Checkout</a></p>				            	
 				            	</div>
 				            	
 				            	<div class="block-content" id="cartPanel">
@@ -133,11 +123,26 @@
 				            </div>
 				            
 		            
-		            		<ul id="accountLinks">
-				            	<li><a href="#">My Account</a></li>
-				            	<li><a href="#">Help & Support</a></li>
-		            			<li><a id="chkOutBtn" href="#">Checkout</a></li>
-				            </ul>
+		            		<div id="baseLinks">
+				            	<p id="myAccountLink"><a class="arrowLink" href="#">My Account</a></p>
+		            			<div id="switches" class="sbox lngr">
+									<div class="switch switcher-language">
+										<label><span>Select Store</span>:</label>
+										<div class="switch-wrapper" id="languageSelect">
+											<select>
+								                <optgroup label="European Stores">
+												<option value="/de/">Deutsch - Euro</option>
+									           	<option value="/eu/">English - Euro</option>
+									           	<option value="/es/">Español - Euro</option>
+									           	<option value="/fr/">Français - Euro</option>
+									           	<option value="/it/">Italiano - Euro</option>
+												<option value="/en/">English - GBP</option>
+								                </optgroup>
+											</select>
+										</div>
+									</div>
+								</div> <!-- /#switches -->
+				            </div>
 		
 		        		</div> <!-- /.quick-access -->
 	        		
@@ -149,6 +154,11 @@
 							    <div id="search_autocomplete" class="search-autocomplete" style="display: none; "></div>
 							</div>
 						</form>
+						
+						<div id="headerExtras">
+							<div id="social"><a href="#">&nbsp;</a></div>
+							<div id="helpLink"><a href="#">Help & Support</a></div>
+						</div>
 	        		</div> <!-- /.headerFunctions -->
 	        		
 	        		<div class="branding">
@@ -165,7 +175,7 @@
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Music</a></li>
 						<li><a href="#">Merchandise</a></li>
-						<li><a id="sale" href="#">Sale</a></li>
+						<li class="last"><a id="sale" href="#">Sale</a></li>
 					</ul>
 				</nav>
 			</div>	<!-- /.nav-container -->
@@ -287,11 +297,89 @@
 								
 										</div> <!-- /.std -->
 									</div> <!-- /.prod_details -->
+									
+									<ul>
+										<li><a href="#">Returns policy</a></li>
+										<li><a href="#">Delivery details</a></li>
+									</ul>
+									
+									<div id="reviews">Reviews here
+										<div class="reviews">
+				                            <div class="reviewSummary">
+				                            	    <div class="ratings">
+												        <p class="rating-links">
+												            <a href="#">2 Review(s)</a>
+												            <span class="separator">|</span>
+												            <a href="#">Add Your Review</a>
+												        </p>
+												    </div>
+				                            </div>
+	                            <div class="reviewContent">
+	                                
+									<div id="customer-reviews" class="box-collateral box-reviews">
+										<div class="columnR">
+										    <div class="box-title">
+										        <h2>User Reviews</h2>
+										    </div>
+										    	    <dl id="product-reviews-list" class="box-content">
+											    	    <dt>Love this music so much it makes me weep. -
+											            	<span>Review by</span> Mr Brown	        
+											            </dt>
+												        <dd>
+												            <table class="data-table review-summary-table">
+												                <colgroup><col>
+												                <col>
+												                </colgroup><tbody>
+												                    	                </tbody>
+												            </table>
+												            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+												            <p class="date">(Posted on 20/08/2012)</p>
+												        </dd>
+										    	    <dt>
+
+										            This CD is just the ticket. Goes great with e. - 
+										            <span>Review by</span> Mr Pink	        </dt>
+										        <dd class="last">
+										            <table class="data-table review-summary-table">
+										                <colgroup><col>
+										                <col>
+										                </colgroup><tbody>
+										                    	                </tbody>
+										            </table>
+										            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!</p>
+										            <p class="date">(Posted on 12/07/2012)</p>
+										        </dd>
+										    	    </dl>
+										    										    	</div> </div>
+										                            </div>
+										                        </div>
+	                        </div> <!-- /#reviews -->
+									<div id="social_media">Social links</div>
+									
 								</div> <!-- /.product-collateral -->
 	                			<div class="clearer"></div>
 	                			
 	            			</div> <!-- /.product-view -->
-	
+
+							<div id="releated products">
+								Related products here.
+								
+								<ul>
+							        <li>
+							            <a href="#"><img src="http://img.cdn.warnerartists.net/wmi/store/media/catalog/product/cache/142/thumbnail/48x48/9df78eab33525d08d6e5fb8d27136e95/g/r/greenday_bundlebanner.jpg" width="48" height="48" alt="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET SOLD OUT" title="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET SOLD OUT"></a>
+							        </li>
+							        <li>
+							            <a href="#"><img src="http://img.cdn.warnerartists.net/wmi/store/media/catalog/product/cache/142/thumbnail/48x48/9df78eab33525d08d6e5fb8d27136e95/g/r/greenday_bundlenew_1.png" width="48" height="48" alt="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET" title="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET"></a>
+							        </li>
+							        <li>
+							            <a href="#"><img src="http://img.cdn.warnerartists.net/wmi/store/media/catalog/product/cache/142/thumbnail/48x48/9df78eab33525d08d6e5fb8d27136e95/g/d/gd-boxset-1200x1200_1.png" width="48" height="48" alt="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET" title="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET"></a>
+							        </li>
+							    </ul>
+										    
+							</div>
+							
+							
+							
 						</div> <!-- /.col-main -->
 					
 					</div> <!-- /.main .col1-layout -->
@@ -312,10 +400,13 @@
 					</ul>
 				</div>
 			</div> <!-- /.footer-container -->
-				
+			<div class="logo-container">
+			    <p class="logo"><a href="#">Warner music group</a></p>
+			</div> <!-- /.footer-container -->	
 			
 		</div> <!-- /.wrapper -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
