@@ -142,6 +142,7 @@ body.full-bg  {
     padding: 0;
 }
 
+
 .full-bg nav li a {
 	position: relative;
 	margin: 0 .5em .5em .5em;
@@ -223,8 +224,7 @@ body.full-bg  {
     		-o-box-shadow: inset 0 -1px 1px #fff;
 		
 		
-		}
-		
+		}		
 		
 		
 		
@@ -364,7 +364,7 @@ body.full-bg  {
 	font-weight: normal;
 	padding: 0 2px 0 0;
 }
-.cart2 #cartBtn em.icon {
+em.basket_icon {
 	float: left;
 	width: 24px;
 	height: 24px;

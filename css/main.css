@@ -356,14 +356,31 @@ display: none !important;
 
 
 /* Product Details page */
-
+#main-image img {
+	width: 320px;
+	height: 320px;
+}
+.product-img-box {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.more-views img {
+	width: 100px;
+	height: 100px;
+}
 .more-views ul li {
 	list-style: none;
 	float: left;
-	margin: 0 10px 0 0;
+	margin: 0 10px 9px 0;
+}
+.more-views ul li.last {
+	margin-right: 0;
 }
 
-
+.product-collateral {
+	float: left;
+	width: 420px;
+}
 
 
 .col2-left-layout {}
@@ -415,6 +432,6 @@ display: none !important;
 .col2-left-layoutb #switches {
 	clear: both;
     float: right;
-    margin: 20px 0 12px;
+    margin: 14px 0 12px;
 }
 
