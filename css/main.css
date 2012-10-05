@@ -44,7 +44,7 @@
 .products-grid .item:focus {
     background: #e6e6e6; 
 }
-.products-grid a.product-image {
+.products-grid .product-image {
 	float: left;
 	margin: 0 0 5px 0;
 	text-decoration: none;

@@ -478,3 +478,18 @@ body.full-bg  {
 	text-decoration: underline;
 	color: #555;
 }
+.cart2 .products-grid .product-image {
+	margin: 0 0 9px 0;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 12px;
+	background: #fff;
+}
+.cart2 .products-grid .featured .product-image {
+	margin: 0;
+	border-bottom: none;
+	padding-bottom: 9px;
+	background: #fff;
+}
+.cart2 .featured-title h5 {
+    font-size: 1.8em;
+}
