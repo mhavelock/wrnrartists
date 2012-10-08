@@ -250,8 +250,8 @@
    
 .product-view {
 	float: left;
-	width: 812px;
-	margin: 0 12px 0 0;
+	width: 800px;
+	margin: 0 20px 0 0;
 }
 
 /* Product Image */
@@ -262,7 +262,7 @@
 }
 .product-img-box {
 	float: left;
-	margin: 0 10px 10px 0;
+	margin: 0 20px 10px 0;
 	width: 320px;
 }
 #largeImg {
@@ -290,7 +290,7 @@
 
 .product-collateral {
 	float: left;
-	width: 472px;
+	width: 460px;
 }
 
 .product-view .btn-cart {
