@@ -28,7 +28,7 @@
 				            
 				            <div id="topCart">
 				            	<div id="myBasket">
-				            		<p id="cartBtn"><a href="#"><em class="icon"></em><span class="items">View <em>(</em>2<em>)</em> items</span><span><em>{</em><b>&pound;</b>999<em>}</em></span></a></p>				            			
+				            		<p id="cartBtn"><a href="#"><em class="basket_icon"></em><span class="items">View <em>(</em>2<em>)</em> items</span><span><em>{</em><b>&pound;</b>999<em>}</em></span></a></p>				            			
 				            		<p id="chkOutBtn"><a class="arrowLink" href="#">Checkout</a></p>				            	
 				            	</div>
 				            	
@@ -45,7 +45,7 @@
 											        <p class="product-name">
 											        	<a href="#">Item 01 &ndash; Red</a>
 											        </p>
-											        <table cellpadding="0">
+											        <table>
 														<tbody>
 															<tr>
 											                	<th>Price</th>
@@ -80,7 +80,7 @@
 											        <p class="product-name">
 											        	<a href="#">Item 01 &ndash; Red</a>
 											        </p>
-											        <table cellpadding="0">
+											        <table>
 														<tbody>
 															<tr>
 											                	<th>Price</th>
@@ -149,7 +149,7 @@
 		        		<form id="search_mini_form" action="#" method="get">
 							<div class="form-search">
 							    <input id="search" type="text" name="q" value="" placeholder="Search this site" autocomplete="off">
-							    <input type="image" src="img/icons/search.png" title="Search" class="button">
+							    <input type="image" src="img/icons/search.png" title="Search" class="button" alt="search">
 							    <div class="clearer"></div>
 							    <div id="search_autocomplete" class="search-autocomplete" style="display: none; "></div>
 							</div>
@@ -215,19 +215,21 @@
 									<div class="product-img-box">
 									                    
 										<a class="product-image image-zoom" id="main-image" href="#">
-											<img src="http://img.cdn.warnerartists.net/wmi/store/media/catalog/product/cache/142/image/247x/9df78eab33525d08d6e5fb8d27136e95/g/r/greenday_bundlebanner.jpg" height="247" width="247" alt="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET SOLD OUT">
+											<img src="media/catalog/prod03_170x170.jpg" height="247" width="247" alt="cd" />
 										</a>
+										
+										<p id="largeImg"><a href="#">Click for larger image</a></p>
 										
 										<div class="more-views">
 										    <ul>
 										        <li>
-										            <a href="#"><img src="http://img.cdn.warnerartists.net/wmi/store/media/catalog/product/cache/142/thumbnail/48x48/9df78eab33525d08d6e5fb8d27136e95/g/r/greenday_bundlebanner.jpg" width="48" height="48" alt="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET SOLD OUT" title="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET SOLD OUT"></a>
+										            <a href="#"><img src="media/catalog/prod01_170x170.jpg" width="48" height="48" alt="cd" title="Click to change image"></a>
 										        </li>
 										        <li>
-										            <a href="#"><img src="http://img.cdn.warnerartists.net/wmi/store/media/catalog/product/cache/142/thumbnail/48x48/9df78eab33525d08d6e5fb8d27136e95/g/r/greenday_bundlenew_1.png" width="48" height="48" alt="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET" title="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET"></a>
+										            <a href="#"><img src="media/catalog/prod03_170x170.jpg" width="48" height="48" alt="cd" title="Click to change image"></a>
 										        </li>
-										        <li>
-										            <a href="#"><img src="http://img.cdn.warnerartists.net/wmi/store/media/catalog/product/cache/142/thumbnail/48x48/9df78eab33525d08d6e5fb8d27136e95/g/d/gd-boxset-1200x1200_1.png" width="48" height="48" alt="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET" title="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET"></a>
+										        <li class="last">
+										            <a href="#"><img src="media/catalog/prod01_170x170.jpg" width="48" height="48" alt="cd" title="Click to change image"></a>
 										        </li>
 										    </ul>
 										</div> <!-- .more-views -->
@@ -247,19 +249,45 @@
 		                                    <div class="short-description std">
 		                     					Ultimate Box Set Special Edition Bundle                     
 		                     				</div> <!-- /.short-description -->
-		
+					
 											<div class="price-box">
 												<span class="price">€69.99</span>                                                                            
 											</div>
 											
-											<a class="sq_btn sq_btn_green" href="#"><em class="basket_icon"></em> Checkout<em class="arrow_r"></em></a>
+											<div class="options-container-big">
+                                				<div class="product-options sbox" id="product-options-wrapper">
+    
+													<dl class="last lngst size">
+											            <dt><label class="required"><em>*</em>Size</label></dt>
+												        <dd class="last">
+															<select name="super_attribute[681]" id="attribute681" class="required-entry super-attribute-select validation-failed">
+															  <option value="">Choose an Option...</option><option value="35">S</option><option value="26">M</option><option value="31">L</option>
+															</select>
+															<div class="validation-advice" id="advice-required-entry-attribute681" style=""></div>
+															
+												        </dd>
+											        </dl>
+											        
+											        <div class="qtyOption short">
+											        	<label for="qty" class="right">Qty</label>
+										                <select name="qty" id="qty" class="right">
+										        			<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>        
+										        		</select>
+                									</div>
+    											</div>
+
+												<div class="product-options-bottom">
+												    <fieldset class="add-to-cart">
+														<button type="button" class="btn-cart sq_btn sq_btn_green" title="Add to Cart"><span><em class="plus_icon"></em>Add to Cart<em class="arrow_r"></em></span></button>
+												   </fieldset>
+												</div>
+                           				 	</div>
 											
 											
 	                                     </div> <!-- /.product-main-info -->  
 	                                                                                                        
 									</div> <!-- /.product-shop -->
 									
-									<h2>Product Information</h2>
 								    <div id="prod_details">
 										<div class="std">
 								    		
@@ -270,114 +298,124 @@
 												<li>Teneo, inquit, finem illi videri nihil dolere.</li>
 												<li>Quia nec honesto quic quam honestius nec turpi turpius.</li>
 												<li>Sin autem eos non probabat, quid attinuit cum iis, quibuscum re concinebat, verbis discrepare?</li>
-												<li>Quid ergo?</li>
-												<li>Haec para/doca illi, nos admirabilia dicamus.</li>
 											</ul>
 											
 											<ol>
 												<li>Vide, quantum, inquam, fallare, Torquate.</li>
 												<li>Ego quoque, inquit, didicerim libentius si quid attuleris, quam te reprehenderim.</li>
-												<li>Nam de summo mox, ut dixi, videbimus et ad id explicandum disputationem omnem conferemus.</li>
 												<li>Consequens enim est et post oritur, ut dixi.</li>
 											</ol>
-									
-											<p>Non est igitur summum malum dolor. Egone non intellego, quid sit don Graece, Latine voluptas? Est enim effectrix multarum et magnarum voluptatum. Atque haec coniunctio confusioque virtutum tamen a philosophis ratione quadam distinguitur.</p>
+											<br/><br/>
+											<div class="tabs">
+											<ul class="tablist">
+												<li><a href="#tracklisting">Artist Track Listing</a></li>
+												<li><a href="#reviewtab">User Reviews</a></li>
+											</ul>
 											
-											<div class="track_listsing">
-												<p><strong>Artist Track Listing:</strong></p>
-												<br>
-												<p>1. Nuclear Family</p>
-												<p>2. Stay The Night</p>
-												<p>3. Carpe Diem</p>
-												<p>4. Let Yourself Go</p>
-												<p>5. Kill The DJ</p>
-												<p>6. Fell For You</p>
-												<p>7. Loss Of Control</p>
-												<p>8. Troublemaker</p>
-												<p>9. Angel Blue</p>
-												<p>10. Sweet 16</p>
-												<p>11. Rusty James</p>
-												<p>12. Oh Love</p>
-											</div>										
+											<div class="tab" id="tracklisting">
+												<div class="track_listing">
+													<p><strong>Artist Track Listing:</strong></p>
+													<br>
+													<p>1. Nuclear Family</p>
+													<p>2. Stay The Night</p>
+													<p>3. Carpe Diem</p>
+													<p>4. Let Yourself Go</p>
+													<p>5. Kill The DJ</p>
+													<p>6. Fell For You</p>
+													<p>7. Loss Of Control</p>
+													<p>8. Troublemaker</p>
+													<p>9. Angel Blue</p>
+													<p>10. Sweet 16</p>
+													<p>11. Rusty James</p>
+													<p>12. Oh Love</p>
+												</div>		
+											</div>
+											<div class="tab" id="reviewtab">
+												<div class="reviews">
+									
+					                            <div class="reviewSummary">
+					                            	    <div class="ratings">
+													        <p class="rating-links">
+													            <a href="#">2 Review(s)</a>
+													            <span class="separator">|</span>
+													            <a href="#">Add Your Review</a>
+													        </p>
+													    </div>
+					                            </div>
+						                            <div class="reviewContent">
+						                                
+														<div id="customer-reviews" class="box-collateral box-reviews">
+														
+															    <div class="box-title">
+															        <h2>User Reviews</h2>
+															    </div>
+															    	    <dl id="product-reviews-list" class="box-content">
+																    	    <dt>Love this music so much it makes me weep. -
+																            	<span>Review by</span> Mr Brown	        
+																            </dt>
+																	        <dd>
+																	            <table class="data-table review-summary-table">
+																	                <colgroup><col>
+																	                <col>
+																	                </colgroup><tbody>
+																	                    	                </tbody>
+																	            </table>
+																	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+																	            <p class="date">(Posted on 20/08/2012)</p>
+																	        </dd>
+															    	    <dt>
+					
+															            This CD is just the ticket. Goes great with e. - 
+															            <span>Review by</span> Mr Pink	        
+															            </dt>
+																	        <dd class="last">
+																	            <table class="data-table review-summary-table">
+																	                <colgroup><col>
+																	                <col>
+																	                </colgroup><tbody>
+																	                    	                </tbody>
+																	            </table>
+																	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!</p>
+																	            <p class="date">(Posted on 12/07/2012)</p>
+																	        </dd>
+															    	    </dl>
+															    	</div> 
+															    </div>
+															                 
+					                        		</div> <!-- /#reviews -->
+
+	
+												</div> <!-- /.tab -->
+											</div> <!-- /.tabs -->
+																			
 								
 										</div> <!-- /.std -->
 									</div> <!-- /.prod_details -->
 									
-									<ul>
+									<ul class="base-links">
 										<li><a href="#">Returns policy</a></li>
 										<li><a href="#">Delivery details</a></li>
 									</ul>
 									
-									<div id="reviews">Reviews here
-										<div class="reviews">
-				                            <div class="reviewSummary">
-				                            	    <div class="ratings">
-												        <p class="rating-links">
-												            <a href="#">2 Review(s)</a>
-												            <span class="separator">|</span>
-												            <a href="#">Add Your Review</a>
-												        </p>
-												    </div>
-				                            </div>
-	                            <div class="reviewContent">
-	                                
-									<div id="customer-reviews" class="box-collateral box-reviews">
-										<div class="columnR">
-										    <div class="box-title">
-										        <h2>User Reviews</h2>
-										    </div>
-										    	    <dl id="product-reviews-list" class="box-content">
-											    	    <dt>Love this music so much it makes me weep. -
-											            	<span>Review by</span> Mr Brown	        
-											            </dt>
-												        <dd>
-												            <table class="data-table review-summary-table">
-												                <colgroup><col>
-												                <col>
-												                </colgroup><tbody>
-												                    	                </tbody>
-												            </table>
-												            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-												            <p class="date">(Posted on 20/08/2012)</p>
-												        </dd>
-										    	    <dt>
-
-										            This CD is just the ticket. Goes great with e. - 
-										            <span>Review by</span> Mr Pink	        </dt>
-										        <dd class="last">
-										            <table class="data-table review-summary-table">
-										                <colgroup><col>
-										                <col>
-										                </colgroup><tbody>
-										                    	                </tbody>
-										            </table>
-										            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!</p>
-										            <p class="date">(Posted on 12/07/2012)</p>
-										        </dd>
-										    	    </dl>
-										    										    	</div> </div>
-										                            </div>
-										                        </div>
-	                        </div> <!-- /#reviews -->
-									<div id="social_media">Social links</div>
+									<div id="social_media"><p><img src="img/tmp/social_links.gif" /></p></div>
 									
 								</div> <!-- /.product-collateral -->
 	                			<div class="clearer"></div>
 	                			
 	            			</div> <!-- /.product-view -->
 
-							<div id="releated products">
-								Related products here.
+							<div id="related_products">
+								<h5>You may also like</h5>
 								
 								<ul>
 							        <li>
-							            <a href="#"><img src="http://img.cdn.warnerartists.net/wmi/store/media/catalog/product/cache/142/thumbnail/48x48/9df78eab33525d08d6e5fb8d27136e95/g/r/greenday_bundlebanner.jpg" width="48" height="48" alt="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET SOLD OUT" title="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET SOLD OUT"></a>
+							            <a href="#"><img src="media/catalog/prod02_170x170.jpg" width="120" height="120" alt="prod" /></a>
 							        </li>
 							        <li>
-							            <a href="#"><img src="http://img.cdn.warnerartists.net/wmi/store/media/catalog/product/cache/142/thumbnail/48x48/9df78eab33525d08d6e5fb8d27136e95/g/r/greenday_bundlenew_1.png" width="48" height="48" alt="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET" title="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET"></a>
+							            <a href="#"><img src="media/catalog/prod04_170x170.jpg" width="120" height="120" alt="prod" /></a>
 							        </li>
 							        <li class="last">
-							            <a href="#"><img src="http://img.cdn.warnerartists.net/wmi/store/media/catalog/product/cache/142/thumbnail/48x48/9df78eab33525d08d6e5fb8d27136e95/g/d/gd-boxset-1200x1200_1.png" width="48" height="48" alt="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET" title="¡UNO!, ¡DOS!, ¡TRE! ULTIMATE BOX SET"></a>
+							            <a href="#"><img src="media/catalog/prod01_170x170.jpg" width="120" height="120" alt="prod" /></a>
 							        </li>
 							    </ul>
 										    

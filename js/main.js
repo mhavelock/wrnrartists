@@ -4,11 +4,11 @@ jQuery(function() {
 	html5placeholder();
 	showHide('cartPanel', 'cartBtn');
 	menuCurrentHighlight();
-	
+	removeDefaultOption()
 	tabbedContentFade();
+	tabbedContent();
 	
 	$j('.sbox select').selectbox(); /* in plugins.js */
-	
 	
     // twitterGPlus();
     
@@ -21,7 +21,7 @@ jQuery(function() {
 
 
 function tabbedContentFade() {
-    $j("#tabs").tabs({
+    $j("#bannertabs").tabs({
 
         show: function(event, ui) {
 
@@ -64,40 +64,32 @@ function tabbedContentFade() {
 /* Hide Show tabs
 ----------------------------------------- */
 function tabbedContent(){
-    $j('.tabs div.tab').css('height','0px'); //Hide all content
-    $j('.tabs div.tab:first').css('height','auto'); //Show first tab content
+    if($j('.tabs').length != 0){
+	    $j('.tabs div.tab').css('height','0px'); //Hide all content
+	    $j('.tabs div.tab:first').css('height','auto'); //Show first tab content
+	
+	    $j('.tablist li').click(function(){
+		$j('.tabs div.tab').css('height','0px'); //Hide all tab content
+		var activeTab = $j(this).find('a').attr('href');
+		$j(activeTab).css('height','auto');
+		if($j(this).not('.current')) {
+			$j('.tablist li').removeClass('current');
+			$j(this).addClass('current');
+		}
+		return false;
+	    });
+	 }
+}
 
-    $j('.tabList li').click(function(){
-	$j('.tabs div.tab').css('height','0px'); //Hide all tab content
-	var activeTab = $j(this).find('a').attr('href');
-	$j(activeTab).css('height','auto');
-	if($j(this).not('.current')) {
-		$j('.tabList li').removeClass('current');
-		$j(this).addClass('current');
+
+function removeDefaultOption() {
+	if($j('.product-options .size').length) {
+		$j('.product-options .size').delegate('.sbHolder','click',function(){
+			if($j(this).find('.sbOptions li:visible:first-child')) $j(this).find('.sbOptions li:first-child').addClass("empty");
+			else $j(this).find('.sbOptions li:first-child').removeClass("empty")
+		});
 	}
-	return false;
-    });
 }
-
-
-function tabbedContentFade2()
-{
-    jQuery('.tabs li').click(function(){
-        if(jQuery(this).not('.current')){
-            jQuery('.tabs li').removeClass('current');
-            jQuery(this).addClass('current');
-            var id = jQuery(this).attr('rel');
-
-            jQuery('div#fullWidthHolder div.slide:visible').fadeOut('slow', function(){
-                jQuery('div#fullWidthHolder div#'+id).fadeIn('slow');
-            });
-
-        }
-
-        return false;
-    })
-}
-
 
 
 function showHide(moreID, moreBTN) {	 	

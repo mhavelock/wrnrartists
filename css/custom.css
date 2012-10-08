@@ -447,14 +447,14 @@ em.basket_icon {
 }
 
 
-.cart2 nav li {
+.nav2 li {
     float: left;
     font-size: 1.8em;
     background: url(../img/icons/tilda2.png) no-repeat 100% 50%;
     padding-right: 13px;
     margin-right: 0;
 }
-.cart2 nav li.last {
+.nav2 li.last {
     background: none;
 }
 
@@ -479,23 +479,32 @@ em.basket_icon {
 	text-decoration: underline;
 	color: #555;
 }
-.cart2 .products-grid .product-image {
-	margin: 0 0 9px 0;
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 12px;
-	background: #fff;
-}
-.cart2 .products-grid .featured .product-image {
+
+
+
+
+.header3 #back2site {
+	background: url(../img/icons/arrow_l.png) no-repeat 0 2px;
+	left: 0;
+    top: 6px;
+    padding: 0 0 0 16px;
+    -webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 	margin: 0;
-	border-bottom: none;
-	padding-bottom: 9px;
-	background: #fff;
+	color: #aaa;
 }
-.cart2 .featured-title h5 {
-    font-size: 1.8em;
+
+.header3 #switches, .header3 #switches .form-language {
+	float: none;
+	z-index: 2;
 }
-.cart2 .price-box, .price-box p {
-    color: #777777;
-    font-weight: bold;
-    letter-spacing: 1px;
+.header3 #switches {
+	clear: both;
+    float: right;
+    margin: 14px 0 12px;
 }
+

@@ -136,7 +136,9 @@ h4, h5, h6 {
 	margin: 0;
 	padding: 6px;
 }
-
+#switches .sbSelector {
+	padding: 0;
+}
 /* Cart / Account */
 .headerFunctions {
 	float: right;
@@ -203,7 +205,7 @@ h4, h5, h6 {
     position: relative;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
     width: 312px;
 }
 #topCart .block-title {
@@ -380,6 +382,7 @@ h4, h5, h6 {
     font-weight: bold;
 }
 
+.product-details .details,
 .product-details .btn-edit,
 .product-details .btn-remove {
     color: #202020;
@@ -505,22 +508,22 @@ nav li a {
 	text-decoration: none;
 }
 /* Column left layout */
-.col2-left-layout nav  {
+nav .vert  {
 	padding: 24px 9px 12px 18px;
 }
-.col2-left-layout nav li {
+nav .vert li {
 	clear: left;
 	margin: 0 0 20px 0;
 }
-.col2-left-layout nav li {
+nav .vert li {
 	font-size: 1.6em;
 }
-.col2-left-layout nav li a {
+nav .vert li a {
 	background: url(../img/icons/arrow_r2.png) no-repeat 0 7px transparent;
     padding: 0 0 0 22px;
 }
-.col2-left-layout nav li a:hover,
-.col2-left-layout nav li a:focus {
+nav .vert li a:hover,
+nav .vert li a:focus {
 	background-position: 0 -25px;
 }
 
@@ -528,6 +531,8 @@ nav li a {
 	background: #fff;
 	min-height: 480px;
 	padding: 0 0 20px 0;
+	float: left;
+	width: 996px;
 }
 
 /* .page { width:996px; margin:0 auto; text-align:center; } */
@@ -571,8 +576,8 @@ nav li a {
 .col2-right-layout { float: left; }
 
 /* 3 Columns Layout */
-.col3-layout .col-main { width:553px; display:inline; }
-.col3-layout .col-wrapper { float:left; width:964px; }
+.col3-layout .col-main { width:540px; display:inline; }
+.col3-layout .col-wrapper { float:left; width:784px; }
 .col3-layout .col-wrapper .col-main { float:right; }
 
 /* Content Columns */
@@ -601,13 +606,13 @@ nav li a {
 .breadcrumbs {
 	clear: both;
 	background: #fff;
-	padding: 18px 9px 0 0;
+	padding: 0 0 10px 0;
 	margin: 0;
 	color: #333;
 }
 .breadcrumbs ul {
 	list-style: none;
-	margin: 0 0 0 16px;
+	margin: 0;
 }
 .breadcrumbs li {
 	display: inline;
@@ -1114,7 +1119,7 @@ div.validation-error select {
 	}
 	.sq_btn:hover,
 	.sq_btn:focus {
-		box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+		box-shadow: 0 1px 7px rgba(0,0,0,0.1), inset 0 1px 0 #fff;
     		-webkit-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
     		-moz-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
     		-o-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
@@ -1141,9 +1146,9 @@ div.validation-error select {
 	border-bottom-color: #587e93;
 		
 	}
-	.sq_btn:hover,
-	.sq_btn:focus {
-	box-shadow: 0 0 7px #53a6d5;
+	.sq_btn.default:hover,
+	.sq_btn.default:focus {
+	box-shadow: 0 1px 7px #53a6d5;
 		     box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
     		-webkit-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
     		-moz-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
@@ -1164,19 +1169,194 @@ div.validation-error select {
 		
 		
 		}
-
+.main .sq_btn,
+.main .sq_btn:hover,
+.main .sq_btn:focus {
+	text-decoration: none;
+}
 .sq_btn_green {
 	background: -webkit-gradient(linear, left top, left bottom, from(#25f14b), to(#33b44b));
 	background: -moz-linear-gradient(top, #25f14b, #33b44b);
 }
 
+
+
+/* Select Box Replacement 
+------------------------------------------------ */
+.sbHolder{
+	height: 15px;
+	position: relative;
+	width: 106px;
+	text-transform: uppercase;
+	padding: 4px 3px 3px 3px;
+	margin: 0;
+	line-height: 1.2;
+	background-color: #fff;
+    border: none;
+    float: left;
+}
+.main .sbHolder a {
+	text-decoration: none;
+}
+.sbSelector {
+	display: block;
+	height: 23px;
+	left: 0;
+	line-height: 23px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 5px;
+	top: 0;
+	width: 106px;
+	text-decoration: none;
+	font-size: 1.2em;
+	padding: 0 6px 0 0;
+}
+
+.Safari .sbSelector {
+	height: 23px;
+	line-height: 24px;
+	text-indent: 8px;
+}
+.short .sbHolder,
+.short .sbSelector {
+	width: 62px; 
+}
+.med .sbHolder,
+.med .sbSelector {
+	width: 80px; 
+}
+.lng .sbHolder,
+.lng .sbSelector {
+	width: 110px; 
+}
+.lngr .sbHolder,
+.lngr .sbSelector {
+	width: 132px; 
+}
+.lngst .sbHolder, 
+.lngst .sbSelector {
+    width: 160px;
+}
+.sbSelector:hover,
+.sbSelector:focus {
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: transparent url(../img/icons/select_arrow.png) 0 4px no-repeat;
+	display: block;
+	height: 20px;
+	outline: none;
+	position: absolute;
+	right: -1px;
+	top: 1px;
+	width: 20px;
+	z-index: 2;
+}
+.sbSelector:hover .sbToggle,
+.sbToggle:hover,
+.sbSelector:focus .sbToggle,
+.sbToggle:focus {
+	background: #fff url(../img/icons/select_arrow.png) 0 -44px no-repeat;
+}
+.sbToggleOpen{
+	background: #fff url(../img/icons/select_arrow.png) 0 -92px no-repeat;
+}
+.sbToggleOpen:hover{
+	background: #fff url(../img/icons/select_arrow.png) 0 -140px no-repeat;
+}
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{}
+.sbHolderDisabled .sbToggle{}
+.sbOptions{
+	background-color: #212121;
+	border: solid 1px #515151;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 106px;
+	z-index: 3;
+	overflow-y: auto;
+}
+.short .sbOptions {
+	width: 69px; /* -108px */
+}
+.med .sbOptions {
+	width: 87px; /* -98px */
+}
+.lng .sbOptions {
+	width: 115px; 
+}
+.lngr .sbOptions {
+	width: 137px; 
+}
+.lngst .sbOptions {
+	width: 165px; 
+}
+.sbOptions li{
+	padding: 0 7px;
+	margin-left: 0;
+}
+.sbOptions a{
+	border-bottom: dotted 1px #515151;
+	display: block;
+	outline: none;
+	padding: 2px 0 2px 3px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #ddd;
+	text-decoration: none;
+}
+.sbOptions a:hover{
+	color: #fff;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}
+.sbOptions li.empty {
+	display: none;
+}
+
+
+/* Footer */
+.footer {
+	text-align: center;
+}
+.footer ul {
+	display: inline-block;
+}
 .footer li {
 	float: left;
-	margin: 0 0 10px 0;
-	padding: 9px 12px ;
+	margin: 0;
+	padding: 12px 14px ;
 	font-size: 1.4em;
 }
 
+/* Footer Logo */
 .logo-container {
 	background: #ccc;
 }
