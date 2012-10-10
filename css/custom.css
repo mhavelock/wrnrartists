@@ -33,7 +33,7 @@
 	color: #222;
 }
 #search_mini_form input.button {
-	background: #ececec;
+	background: #ccc;
 }
 
 #logo {
@@ -52,7 +52,17 @@
    color: #fff;
 }
 
-
+/* Back to site link */
+#back2site {
+	background: #ececec url(../img/icons/arrow_l2.png) no-repeat 5px 9px;
+    -webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: #666;
+}
 
 
 
@@ -233,7 +243,7 @@ body.full-bg  {
 		
 		
 		
-		
+/* Bruno Marrs type styles */	
 		
 .full-header .header-container {
 	background: transparent url(../skins/brunomars/img/stripe.png) repeat-x 0 0;
@@ -250,23 +260,12 @@ body.full-bg  {
     overflow: hidden;
     text-indent: -9999em;
 }
-.full-header .nav-container {
-	background: rgba(0,0,0,0.8);	
-}
-.full-header nav li a {
-	color: #fff;	
-}
-.full-header #switches {
-	float: right;
-}
-.full-header #switches label {
-	color: #fff;
-}
 .full-header #back2site {
 	background: url(../img/icons/arrow_l.png) no-repeat 0 2px;
 	left: 0;
     top: 6px;
     padding: 0 0 0 16px;
+    color: #fff;
 }
 .full-header #back2site:hover,
 .full-header #back2site:focus {
@@ -275,8 +274,20 @@ body.full-bg  {
 }
 .full-header .headerFunctions {
     clear: right;
+    margin-top: 2.6em;
 }
-
+.full-header .headerFunctions a {
+    color: #fff;
+}
+.full-header #switches a {
+	color: #222;
+}
+.full-header .nav-container {
+	background: rgba(0,0,0,0.8);	
+}
+.full-header nav li a {
+	color: #fff;	
+}
 .full-header #page {
     background: transparent;
 }
@@ -285,6 +296,7 @@ body.full-bg  {
 .full-header .quick-access {
 	background: rgba(0,0,0,0.7);
 }
+/*
 .full-header .quick-access,
 .full-header .quick-access a {
 	color: #fff;
@@ -306,7 +318,7 @@ body.full-bg  {
 .full-header #cartBtn:focus {
 	background-position: 298px 13px;
 }
-
+*/
 .full-header #logo {
 	background: transparent; 
 }
@@ -321,132 +333,6 @@ body.full-bg  {
 }
 
 
-
-
-
-/* CART 2 */
-.cart2 #topCart {
-	width: 326px;
-}
-.cart2 #myBasket {
-	background-image: none;
-	position: relative;
-	float: left;
-}
-.cart2 #cartBtn {
-    background: none;
-    display: block;
-    font-size: 100%;
-    height: auto;
-    line-height: 1.5;
-    padding: 0;
-    float: left;
-}
-.cart2 #cartBtn a {
-	font-size: 1.4em;
-	border-right: 1px solid #ccc;
-	float: left;
-	width: 200px;
-	display: block;
-	padding: 9px 10px 6px 10px;
-}
-.cart2 #cartBtn span {
-	font-weight: bold;
-}
-.cart2 #cartBtn span em {
-	color: #bbb;
-	padding: 0 6px;
-	font-style: normal;
-	font-weight: normal;
-}
-.cart2 #cartBtn span b {
-	color: #555;
-	font-weight: normal;
-	padding: 0 2px 0 0;
-}
-em.basket_icon {
-	float: left;
-	width: 24px;
-	height: 24px;
-	background: transparent url(../img/icons/basket.png) no-repeat 0 0;
-	margin: 0 9px 0 0;
-	padding: 0;
-}
-.cart2 #cartBtn .items {
-	text-decoration: underline;
-	padding: 0 5px 0 0;
-	font-weight: normal;
-}
-.cart2 #cartBtn .items em {
-	padding: 0;
-}
-.cart2 #cartBtn a:hover {
-	background: #ccc url(../img/icons/arrow_r.png) no-repeat 204px 15px;
-	text-decoration: none;
-}
-
-.cart2 #chkOutBtn {
-	float: left;
-	font-size: 1.3em;
-	font-weight: bold;
-}
-.cart2 .arrowLink {
-	background: transparent url(../img/icons/arrow_r.png) no-repeat 88px 14px;
-	display: block;
-	width: 85px;
-	padding: 13px 9px;
-	float: left;
-}
-.cart2 .arrowLink:hover,
-.cart2 .arrowLink:focus {
-	background: #ccc url(../img/icons/arrow_r.png) no-repeat 90px -16px;
-	text-decoration: none;
-}
-
-.cart2 #myAccountLink {
-	font-size: 1.2em;
-	border-right: 1px solid #ccc;
-	float: left;
-	background-position: 82px 14px;
-}
-.cart2 #myAccountLink:hover,
-.cart2 #myAccountLink:focus {
-	background-position: 82px -16px;
-}
-
-.cart2 #switches {
-    padding: 8px;
-}
-.cart2 #switches label {
-    top: 0;
-}
-
-.cart2 #search_mini_form input#search {
-    width: 251px;
-}    
-   
-.cart2 #back2site {
-	background: #ececec url(../img/icons/arrow_l2.png) no-repeat 5px 9px;
-	left: 0;
-    top: 0;
-    padding: 7px 9px 6px 24px;
-    -webkit-border-bottom-right-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-moz-border-radius-bottomright: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	margin: 0;
-	color: #666;
-	font-weight: normal;
-}
-
-.cart2 #cartPanel {
-    top: 40px;
-    width: 327px;
-}
-
-
 .nav2 li {
     float: left;
     font-size: 1.8em;
@@ -458,53 +344,58 @@ em.basket_icon {
     background: none;
 }
 
-
-.cart2 #social {
+/*
+#social {
 	float: right;
 	margin: 26px 0 0 0;
 }
-.cart2 #social a {
+#social a {
 	width: 90px;
 	height: 27px;
 	background: url(../img/icons/social.png) no-repeat 0 0;
 	display: block;
 }
-.cart2 #helpLink {
+#helpLink {
 	float: right;
 	margin: 36px 0 0 0;
 	display: none;
 }
-.cart2 #helpLink a {
+#helpLink a {
 	font-size: 1.4em;
 	text-decoration: underline;
 	color: #555;
 }
+*/
 
 
-
-
-.header3 #back2site {
-	background: url(../img/icons/arrow_l.png) no-repeat 0 2px;
-	left: 0;
-    top: 6px;
-    padding: 0 0 0 16px;
-    -webkit-border-bottom-right-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-moz-border-radius-bottomright: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	margin: 0;
-	color: #aaa;
+/* Cart with search on left */
+.headerb #myAccountLink {
+	float: right;
+	border: none;
+	border-left: 1px solid #ccc;
 }
-
-.header3 #switches, .header3 #switches .form-language {
-	float: none;
-	z-index: 2;
+.headerb #myAccountLink a {
+    background-position: 88px 14px;
+    width: 87px;
 }
-.header3 #switches {
-	clear: both;
-    float: right;
-    margin: 14px 0 12px;
+.headerb #myAccountLink a:hover,
+.headerb #myAccountLink a:focus {
+    background-position: 88px -16px;
 }
-
+.headerb #searchReveal {
+	float: left;
+	margin-left: 10px;
+}
+.headerb #switches {
+	float: right;
+	margin-right: 24px;
+}
+.headerb #switches .sbHolder {
+    width: 120px;
+}
+.headerb #switches .sbOptions {
+    width: 165px;
+}
+.headerb #chkOutBtn a {
+	padding-left: 9px;
+}

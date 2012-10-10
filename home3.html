@@ -21,25 +21,15 @@
     </head>
     <body class="full-bg">
 		<div class="wrapper">
-			<div class="header-container">
+						<div class="header-container">
 				<header>
-					<div id="switches" class="flags"2>
-						<label>Select Store:</label>
-						<div class="form-language">
-						    <a class="active" href="#" title="Click to Change store language and currency"><img src="img/flags/uk_st.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/eng_eu.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/de_eu.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/es_eu.png" alt="language/currency"></a>
-						    <a href="#" title="Click to Change store language and currency"><img src="img/flags/it_eu.png" alt="language/currency"></a>
-						</div> 
-					</div> <!-- /#switches -->
-					
 					<div class="headerFunctions">
 						<div class="quick-access">
 				            
 				            <div id="topCart">
 				            	<div id="myBasket">
-				            		<a id="cartBtn" href="#"><span>My Basket</span>(0)</a>
+				            		<p id="cartBtn"><a href="#"><em class="basket_icon"></em><span class="items">View <em>(</em>2<em>)</em> items</span><span><em>{</em><b>&pound;</b>999<em>}</em></span></a></p>				            			
+				            		<p id="chkOutBtn"><a class="arrowLink" href="#">Checkout</a></p>				            	
 				            	</div>
 				            	
 				            	<div class="block-content" id="cartPanel">
@@ -133,22 +123,39 @@
 				            </div>
 				            
 		            
-		            		<ul id="accountLinks">
-				            	<li><a href="#">My Account</a></li>
-				            	<li><a href="#">Help & Support</a></li>
-		            			<li><a id="chkOutBtn" href="#">Checkout</a></li>
-				            </ul>
-		
+		            		<div id="baseLinks">
+				            	<p id="myAccountLink"><a class="arrowLink" href="#">My Account</a></p>
+		            			<div id="switches" class="sbox">
+									<div class="switch switcher-language">
+										<label><span>Select Store</span>:</label>
+										<div class="switch-wrapper" id="languageSelect">
+											<select>
+								                <optgroup label="European Stores">
+												<option value="/de/">Deutsch - Euro</option>
+									           	<option value="/eu/">English - Euro</option>
+									           	<option value="/es/">Español - Euro</option>
+									           	<option value="/fr/">Français - Euro</option>
+									           	<option value="/it/">Italiano - Euro</option>
+												<option value="/en/">English - GBP</option>
+								                </optgroup>
+											</select>
+										</div>
+									</div>
+								</div> <!-- /#switches -->
+								<button id="searchReveal">Search</button>
+				            </div>
+						
+							<form id="search_mini_form" action="#" method="get">
+								<div class="form-search">
+								    <input id="search" type="text" name="q" value="" placeholder="Search this site" autocomplete="off">
+								    <input type="image" src="img/icons/search.png" title="Search" class="button">
+								    <div class="clearer"></div>
+								    <div id="search_autocomplete" class="search-autocomplete" style="display: none; "></div>
+								</div>
+							</form>
+						
 		        		</div> <!-- /.quick-access -->
-	        		
-		        		<form id="search_mini_form" action="#" method="get">
-							<div class="form-search">
-							    <input id="search" type="text" name="q" value="" placeholder="Search this site" autocomplete="off">
-							    <input type="image" src="img/icons/search.png" title="Search" class="button">
-							    <div class="clearer"></div>
-							    <div id="search_autocomplete" class="search-autocomplete" style="display: none; "></div>
-							</div>
-						</form>
+
 	        		</div> <!-- /.headerFunctions -->
 	        		
 	        		<div class="branding">

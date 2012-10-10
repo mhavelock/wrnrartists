@@ -3,8 +3,10 @@ jQuery(function() {
 
 	html5placeholder();
 	showHide('cartPanel', 'cartBtn');
+	showHide2('search_mini_form', 'searchReveal');
 	menuCurrentHighlight();
-	removeDefaultOption()
+	removeDefaultOption();
+	// dropDownCountries();
 	tabbedContentFade();
 	tabbedContent();
 	
@@ -18,6 +20,13 @@ jQuery(function() {
 	
 });
 
+
+function dropDownCountries() {
+    $j('#switches').find('option').each(function() {
+        var country = $j(this).val().replace(/\//g, '');
+        $j(this).addClass(country);
+    });
+};
 
 
 function tabbedContentFade() {
@@ -123,6 +132,16 @@ function showHide(moreID, moreBTN) {
 
 };
 
+function showHide2(moreID, moreBTN) {	 	
+	var morePanelID = $j('#'+moreID), //Id of expandable content div
+    moreButtonID = $j('#'+moreBTN); //Id of button for this content div	
+
+	morePanelID.css('display','none');
+	moreButtonID.click(function(e) {	 	
+	 	morePanelID.stop().slideToggle();
+	 	$j(this).toggleClass('triggered').text() == 'View the content' ? 'Hide the content' : 'View the content';
+	});
+};
 
 
 /* HTML5 placeholder

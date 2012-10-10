@@ -19,9 +19,9 @@
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
         <!--[if gte IE 9]> <style type="text/css"> .gradient { filter: none; } </style> <![endif]-->
     </head>
-    <body class="cart2 isle_rbanner">
+    <body class="isle_rbanner">
 		<div class="wrapper">
-			<div class="header-container">
+						<div class="header-container">
 				<header>
 					<div class="headerFunctions">
 						<div class="quick-access">
@@ -125,7 +125,7 @@
 		            
 		            		<div id="baseLinks">
 				            	<p id="myAccountLink"><a class="arrowLink" href="#">My Account</a></p>
-		            			<div id="switches" class="sbox lngr">
+		            			<div id="switches" class="sbox">
 									<div class="switch switcher-language">
 										<label><span>Select Store</span>:</label>
 										<div class="switch-wrapper" id="languageSelect">
@@ -142,23 +142,20 @@
 										</div>
 									</div>
 								</div> <!-- /#switches -->
+								<button id="searchReveal">Search</button>
 				            </div>
-		
-		        		</div> <!-- /.quick-access -->
-	        		
-		        		<form id="search_mini_form" action="#" method="get">
-							<div class="form-search">
-							    <input id="search" type="text" name="q" value="" placeholder="Search this site" autocomplete="off">
-							    <input type="image" src="img/icons/search.png" title="Search" class="button">
-							    <div class="clearer"></div>
-							    <div id="search_autocomplete" class="search-autocomplete" style="display: none; "></div>
-							</div>
-						</form>
 						
-						<div id="headerExtras">
-							<div id="social"><a href="#">&nbsp;</a></div>
-							<div id="helpLink"><a href="#">Help & Support</a></div>
-						</div>
+							<form id="search_mini_form" action="#" method="get">
+								<div class="form-search">
+								    <input id="search" type="text" name="q" value="" placeholder="Search this site" autocomplete="off">
+								    <input type="image" src="img/icons/search.png" title="Search" class="button">
+								    <div class="clearer"></div>
+								    <div id="search_autocomplete" class="search-autocomplete" style="display: none; "></div>
+								</div>
+							</form>
+						
+		        		</div> <!-- /.quick-access -->
+
 	        		</div> <!-- /.headerFunctions -->
 	        		
 	        		<div class="branding">
@@ -169,142 +166,104 @@
 				</header>
 			</div>	<!-- /.header-container -->
 			
-			<div class="nav-container">
-				<nav>
-					<ul class="nav2">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Music</a></li>
-						<li><a href="#">Merchandise</a></li>
-						<li class="last"><a id="sale" href="#">Sale</a></li>
-					</ul>
-				</nav>
-			</div>	<!-- /.nav-container -->
-			
 			<div id="page">	
 				<div class="content">	
-					<div class="main col2-right-layout">
 					
-						<div class="col-main">  				
-
-							<div id="home-content">
+					<div class="main col3-layout">
+						<div class="col-wrapper">
+							<div class="col-main">  
+	
+								<div id="home-content">
+									<div class="featured-products">
+									    
+	    
+										<ul class="products-grid large-items">
+	                                    
+							                <li class="item">
+							                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod01_170x170.jpg"></a>
+							                    <div class="prod-grid-desc">
+							                        <p class="product-name"><a href="#">Product Name 01</a></p>
+							                        <p class="short_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Isto modo ne improbos quidem, si essent boni viri.</p>
+							                        <div class="price-container">
+							                           <div class="price-box">
+													    	<span class="regular-price">
+													        	<span class="price">€15.99</span>                
+													        </span>
+													    </div>
+							                        </div> <!-- /.price-container -->
 							
+							                        <div class="actions">
+														<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
+							                        </div>
+							                    </div>
+											</li>
+											<li class="item">
+							                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod02_170x170.jpg"></a>
+							                    <div class="prod-grid-desc">
+							                        <p class="product-name"><a href="#">Product Name 01</a></p>
+							                        <p class="short_desc">Inde igitur, inquit, ordiendum est. Sed tamen omne.<br/><br/></p>
+							                        <div class="price-container">
+							                           <div class="price-box">
+													    	<p class="regular-price">
+													        	<span class="price">€15.99</span>                
+													        </p>
+													    </div>
+							                        </div> <!-- /.price-container -->
 							
-								<div class="featured-products">
-    
-									<ul class="products-grid large-items">
-                                    
-						                <li class="item">
-						                <span class="new"></span>
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod01_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <p class="short_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Isto modo ne improbos quidem, si essent boni viri.</p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<span class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </span>
-												    </div>
-						                        </div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
-										</li>
-										<li class="item last">
-										<span class="new"></span>
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod02_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <p class="short_desc">Inde igitur, inquit, ordiendum est. Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur.</p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<p class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </p>
-												    </div>
-												</div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
-										</li>
-					                </ul>
-					                
-					                
-					                
-					                <div class="featured-title">
-								        <h5>Featured products / Bestsellers</h5>
-								    </div>
-    
-									<ul class="products-grid five-row">
-                                    
-						                <li class="item">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod01_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<span class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </span>
-												    </div>
-						                        </div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
-										</li>
-										<li class="item">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod02_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<p class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </p>
-												    </div>
-						                        </div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
-										</li>
-										<li class="item last">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod03_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<p class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </p>
-												    </div>
-												</div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
-										</li>
-					                </ul>
-					                
-                				</div> <!-- /.featured-products -->
-							</div> <!-- /.home-content -->
-
-				
-						</div> <!-- /.col-main -->
-						<div class="col-right sidebar">
+							                        <div class="actions">
+														<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
+							                        </div>
+							                    </div>
+											</li>
+											<li class="item last clear">
+							                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod03_170x170.jpg"></a>
+							                    <div class="prod-grid-desc">
+							                        <p class="product-name"><a href="#">Product Name 01</a></p>
+							                        <p class="short_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Isto modo ne improbos quidem, si essent boni viri.</p>
+							                        <div class="price-container">
+							                           <div class="price-box">
+													    	<p class="regular-price">
+													        	<span class="price">€15.99</span>                
+													        </p>
+													    </div>
+													</div> <!-- /.price-container -->
+							
+							                        <div class="actions">
+														<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
+							                        </div>
+							                    </div>
+											</li>
+						                </ul>
+						                
+						                
+						                
+						               	
+	                				</div> <!-- /.featured-products -->
+								</div> <!-- /.home-content -->
+	
+					
+							</div> <!-- /.col-main -->
+							
+							<div class="col-left">
+								<div class="nav-container">
+									<nav>
+										<ul class="vert">
+											<li><a href="#">Home</a></li>
+											<li><a href="#">Music</a></li>
+											<li><a href="#">Merchandise</a></li>
+											<li><a id="sale" href="#">Sale</a></li>
+										</ul>
+									</nav>
+								</div>	<!-- /.nav-container -->
+							</div> <!-- /.col-left -->
+						</div> <!-- /.col-wrapper -->
+					
+						<div class="col-right">
 							<div id="home-banner"><img src="media/banner_vert.jpg" alt="banner" /></div> 
-						</div>
-					</div> <!-- /.main .col2-right-layout -->
-				</div> <!-- /.content -->
+						</div> <!-- /.col-right -->
 				
+					</div> <!-- /.main .col3-layout -->
+				</div> <!-- /.content -->
 			</div> <!-- /#page -->
 			
 			
@@ -320,9 +279,7 @@
 					</ul>
 				</div>
 			</div> <!-- /.footer-container -->
-			<div class="logo-container">
-			    <p class="logo"><a href="#">Warner music group</a></p>
-			</div> <!-- /.footer-container -->	
+				
 			
 		</div> <!-- /.wrapper -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>

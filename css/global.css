@@ -54,10 +54,12 @@ h4, h5, h6 {
 .branding {
 	position: relative;
 	padding: 0 0 8px 0;
+	width: 100%;
 }
 
 #logo {
 	height: 176px;
+	width: 100%;
 	margin: 0;
 }
 .replace {
@@ -82,19 +84,18 @@ h4, h5, h6 {
 
 #back2site {
 	position: absolute;
-	background: #222;
-	color: #fff;
-	font-weight: bold;
-	padding: 10px;
 	font-size: 1.5em;
-	left: 648px;
-    top: 141px;
-}
-#back2site {
-	background: #ddd;
+	background: transparent url(../img/icons/arrow_l2.png) no-repeat 5px 9px;
+	left: 0;
+    top: 0;
+    padding: 7px 9px 6px 24px;
+	margin: 0;
 }
 
-/* Laguage Flags */
+/* Alternative drop-down */
+.switch-wrapper {
+	float: left;
+}
 #switches  {
 	margin: 4px 0 0 0;
 	position: relative;
@@ -109,36 +110,102 @@ h4, h5, h6 {
 	font-size: 1.1em;
 	position: relative;
 	top: -2px;
-}
-#switches.flags a {
-	float: left;
-	display: block;
-	margin: 0 9px 0 0;
-	opacity: 0.5;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
-	filter: alpha(opacity=50); /* IE 5-7 */
-}
-#switches.flags a.active {
-	opacity: 1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /* IE 8 */
-	filter: alpha(opacity=100); /* IE 5-7 */
+	display: none;
 }
 
-/* Alternative drop-down */
-.switch-wrapper {
-	float: left;
-}
 #switches.sbox {
-	background: #ECECEC;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 	margin: 0;
-	padding: 6px;
+	padding: 6px 0 0 10px;
+}
+#switches .sbHolder {
+    width: 100px;
+    height: 20px;
 }
 #switches .sbSelector {
-	padding: 0;
+    background-position: 4px 2px;
+    background-repeat: no-repeat;
+    padding: 3px 6px 3px 32px;
+    width: 68px;
 }
+
+#switches .sbSelector.DEU,
+#switches .sbSelector.de {
+	background-image: url(../img/flags/24/Germany.png);
+}
+#switches .sbSelector.ESP,
+#switches .sbSelector.es {
+	background-image: url(../img/flags/24/Spain.png);
+}
+#switches .sbSelector.EUR,
+#switches .sbSelector.eu {
+	background-image: url(../img/flags/24/EuropeanUnion.png);
+}
+#switches .sbSelector.FRA,
+#switches .sbSelector.fr {
+	background-image: url(../img/flags/24/France.png);
+}
+#switches .sbSelector.ITA,
+#switches .sbSelector.it {
+	background-image: url(../img/flags/24/Italy.png);
+}
+#switches .sbSelector.ENG,
+#switches .sbSelector.en {
+	background-image: url(../img/flags/24/UnitedKingdom.png);
+}
+
+#switches .sbOptions {
+    width: 196px;
+    padding-bottom: 10px;
+    margin-top: 3px;
+}
+#switches .sbOptions li a {
+    background-position: 4px 2px;
+    background-repeat: no-repeat;
+    padding: 3px 6px 3px 32px;
+}
+#switches .sbOptions li a.de {
+	background-image: url(../img/flags/16/Germany.png);
+}
+#switches .sbOptions li a.es {
+	background-image: url(../img/flags/16/Spain.png);
+}
+#switches .sbOptions li a.eu {
+	background-image: url(../img/flags/16/EuropeanUnion.png);
+}
+#switches .sbOptions li a.fr {
+	background-image: url(../img/flags/16/France.png);
+}
+#switches .sbOptions li a.it {
+	background-image: url(../img/flags/16/Italy.png);
+}
+#switches .sbOptions li a.en {
+	background-image: url(../img/flags/16/UnitedKingdom.png);
+}
+
+/* Search Reveal Button */
+
+#searchReveal {
+	width: 28px;
+	height: 28px;
+	background: transparent url(../img/icons/searchRevealUp.png) no-repeat 0 0;
+	border: none;
+	display: block;
+	text-indent: -999em;
+	float: right;
+	margin: 7px 12px 0 0;
+}
+#searchReveal:hover,
+#searchReveal:focus {
+	background-position: 0 -78px;
+}
+#searchReveal.triggered {
+	background-position: 0 -158px;
+}
+#searchReveal.triggered:hover,
+#searchReveal.triggered:focus {
+	background-position: 0 -235px;
+}
+
 /* Cart / Account */
 .headerFunctions {
 	float: right;
@@ -156,47 +223,103 @@ h4, h5, h6 {
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
-#accountLinks {
-	clear: both;
-}
-#accountLinks li {
-	font-size: 1.1em;
-}
-#accountLinks a {
-	background: transparent url(../img/icons/arrow_r.png) no-repeat 90px 9px;
-	display: block;
-	width: 85px;
-	border-right: 1px solid #ccc;
-	padding: 9px 9px;
-	float: left;
-}
-#accountLinks a:hover,
-#accountLinks a:focus {
-	background: #ccc url(../img/icons/arrow_r.png) no-repeat 90px -21px;
-	text-decoration: none;
-}
-#accountLinks a#chkOutBtn {
-	border: none;
-	width: 86px;
-}
 
 #myBasket {
-	background: transparent url(../img/icons/basket.png) no-repeat 8px 50%;
 	border-bottom: 1px solid #ccc;
+	position: relative;
+	float: left;
+}
+em.basket_icon {
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: transparent url(../img/icons/basket.png) no-repeat 0 0;
+	margin: 0 9px 0 0;
+	padding: 0;
 }
 
+.arrowLink {
+	background: transparent url(../img/icons/arrow_r.png) no-repeat 88px 14px;
+	display: block;
+	width: 85px;
+	padding: 13px 9px;
+	float: left;
+}
+.arrowLink:hover,
+.arrowLink:focus {
+	background: #ccc url(../img/icons/arrow_r.png) no-repeat 90px -16px;
+	text-decoration: none;
+}
+
+#chkOutBtn {
+	width: 104px;
+	float: left;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+#chkOutBtn a {
+	padding-left: 14px;
+}
+#myAccountLink {
+	font-size: 1.3em;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+#myAccountLink a {
+	width: 100px;
+	background-position: 98px 14px;
+}
+#myAccountLink a:hover,
+#myAccountLink a:focus {
+	background-position: 98px -16px;
+}
+
+
+
 #cartBtn {
-	padding: 6px 12px;
-	font-size: 120%;
-	background: transparent url(../img/icons/arrow_r.png) no-repeat 298px 13px;
-	height: 24px;
 	line-height: 24px;
 	display: block;
-    padding: 6px 12px 6px 41px;
+    line-height: 1.5;
+    float: left;
 }
 #cartBtn:hover,
 #cartBtn:focus {
 	background-position: 298px -17px;
+}
+#cartBtn a {
+	font-size: 1.4em;
+	border-right: 1px solid #ccc;
+	float: left;
+	width: 200px;
+	display: block;
+	padding: 9px 10px 6px 10px;
+}
+#cartBtn span {
+	font-weight: bold;
+}
+#cartBtn span em {
+	color: #bbb;
+	padding: 0 6px;
+	font-style: normal;
+	font-weight: normal;
+}
+#cartBtn span b {
+	color: #555;
+	font-weight: normal;
+	padding: 0 2px 0 0;
+}
+
+#cartBtn .items {
+	text-decoration: underline;
+	padding: 0 5px 0 0;
+	font-weight: normal;
+}
+#cartBtn .items em {
+	padding: 0;
+}
+#cartBtn a:hover {
+	background: #ccc url(../img/icons/arrow_r.png) no-repeat 204px 15px;
+	text-decoration: none;
 }
 
 
@@ -206,7 +329,7 @@ h4, h5, h6 {
     top: 0;
     right: 0;
     z-index: 3;
-    width: 312px;
+    width: 326px;
 }
 #topCart .block-title {
     white-space:nowrap;
@@ -244,8 +367,9 @@ h4, h5, h6 {
 	overflow: hidden;
 	position:absolute;
     left: 0;
-    top:36px;
-    width:312px;
+    top: 40px;
+    width: 327px;
+    clear: both;
 }
 #topCart .inner-wrapper {
     padding: 0;
@@ -427,6 +551,9 @@ h4, h5, h6 {
 	position: relative;
 	z-index: 1;
 	clear: both;
+	float: left;
+	border-top: 1px solid #ccc;
+	padding: 10px 0 0 0;
 }
 #search_mini_form input#search {
 	float: left;
@@ -442,7 +569,7 @@ h4, h5, h6 {
     height: 35px;
     padding: 0 10px;
     margin: 0;
-    width: 236px;
+    width: 250px;
 }
 
 #search_mini_form input#search:focus::-webkit-input-placeholder {
@@ -454,15 +581,15 @@ h4, h5, h6 {
 
 
 #search_mini_form input.button {
-	background: #ececec;
-	padding: 4px 15px 5px;
+	background: #ccc;
+	padding: 5px 15px;
 	-moz-border-radius: 0 4px 4px 0;
 	-webkit-border-radius: 0 4px 4px 0;
 	-khtml-border-radius: 0 4px 4px 0;
 	border-radius: 0 4px 4px 0;
 }
 #search_mini_form input.button:hover {
-	background: #ccc;
+	background: #aaa;
 }
 
 #search_autocomplete {
@@ -1274,10 +1401,10 @@ div.validation-error select {
 .sbHolderDisabled .sbHolder{}
 .sbHolderDisabled .sbToggle{}
 .sbOptions{
-	background-color: #212121;
-	border: solid 1px #515151;
+	background-color: #ccc;
+	border: solid 1px #ededed;
 	list-style: none;
-	left: -1px;
+	left: 0;
 	margin: 0;
 	padding: 0;
 	position: absolute;
@@ -1302,8 +1429,9 @@ div.validation-error select {
 	width: 165px; 
 }
 .sbOptions li{
-	padding: 0 7px;
-	margin-left: 0;
+	font-size: 1.2em;
+    margin-left: 0;
+    padding: 3px 7px 0;
 }
 .sbOptions a{
 	border-bottom: dotted 1px #515151;
@@ -1312,7 +1440,6 @@ div.validation-error select {
 	padding: 2px 0 2px 3px;
 }
 .sbOptions a:link, .sbOptions a:visited{
-	color: #ddd;
 	text-decoration: none;
 }
 .sbOptions a:hover{
@@ -1323,13 +1450,11 @@ div.validation-error select {
 }
 .sbOptions .sbDisabled{
 	border-bottom: dotted 1px #515151;
-	color: #999;
 	display: block;
 	padding: 7px 0 7px 3px;
 }
 .sbOptions .sbGroup{
 	border-bottom: dotted 1px #515151;
-	color: #EBB52D;
 	display: block;
 	font-weight: bold;
 	padding: 7px 0 7px 3px;
