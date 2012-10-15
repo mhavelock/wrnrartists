@@ -1,0 +1,401 @@
+.header-container {
+	background: rgb(255,255,255); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-8 */
+}
+.nav-container {
+	background: #e0e0e0;
+}
+#page {
+    background: url(../img/backgrounds/strange_bullseyes.png) repeat 0 0;
+}
+.footer-container {
+	background: rgba(0,0,0,0.5);
+}
+.footer-container,
+.footer-container a {
+	color: #fff;
+}
+
+/* Mini Cart and Search */
+.quick-access {
+	background: #ececec;
+}
+.quick-access,
+.quick-access a {
+	color: #222;
+}
+#search_mini_form button {
+	background: #ccc;
+}
+
+#logo {
+	/* background: #fff; */
+}
+#logo a, #logo span {
+    background: #fff;
+}
+
+/* Product Grid Row Title */
+.featured-title {
+    border-bottom: 3px solid #000000;
+}
+.featured-title h5 {
+   background: #000;
+   color: #fff;
+}
+
+/* Back to site link */
+#back2site {
+	background: #ececec url(../img/icons/arrow_l2.png) no-repeat 5px 9px;
+    -webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: #666;
+}
+
+
+
+
+
+
+
+body.full-bg  {
+	background: #000 url(../skins/greenday/img/body-bg.jpg) no-repeat 0 0;
+}
+.full-bg .wrapper {
+	background: transparent url(../skins/greenday/img/header-bg.png) no-repeat 50% 10px;
+	float: left;
+}
+.full-bg .header-container {
+	background: transparent;
+}
+.full-bg #logo a, .full-bg #logo span {
+    background: transparent;
+    overflow: hidden;
+    text-indent: -9999em;
+}
+.full-bg .nav-container {
+	background: transparent; 
+	
+}
+.full-bg #switches {
+	background: rgba(232,239,227,0.7);
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin: 0;
+	padding: 6px;
+}
+.full-bg #back2site {
+	background: transparent;
+	left: 717px;
+    top: 123px;
+}
+.full-bg #page {
+    background: transparent;
+}
+.full-bg .main {
+	background: transparent url(../skins/greenday/img/shadow-bg.png) repeat-y 0 0;
+}
+.full-bg .footer-container {
+	background: rgba(0,0,0,0.5);
+}
+.full-bg .footer-container,
+.full-bg .footer-container a {
+	color: #fff;
+}
+
+/* Mini Cart and Search */
+.full-bg .quick-access {
+	background: rgba(232,239,227,0.9);
+}
+.full-bg .quick-access,
+.full-bg .quick-access a {
+	color: #000;
+}
+.full-bg #search_mini_form input.button {
+	background: #e8efe3;
+}
+
+.full-bg #logo {
+	background: transparent; 
+}
+
+/* Product Grid Row Title */
+.full-bg .featured-title {
+    border-bottom: 3px solid #000000;
+}
+.full-bg .featured-title h5 {
+   background: #000;
+   color: #fff;
+}
+
+.full-bg nav ul {
+	margin: 15px 0 4px 0;
+}
+.full-bg nav li {
+    margin: 0;
+    padding: 0;
+}
+
+
+.full-bg nav li a {
+	position: relative;
+	margin: 0 .5em .5em .5em;
+	padding: 0.5em 1.5em;
+	font-size: 14px;
+	font-weight: bold;
+	font-family:Arial;
+	color: #4f4f4f;
+	text-shadow: 0 1px 1px #fff;
+	background: #ddd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#c4c4c4));
+	background: -moz-linear-gradient(top, #ededed, #c4c4c4);
+	border: 1px solid #acacac;
+	border-top-color: #bdbdbd;
+	letter-spacing:-1px;
+	border-bottom-color: #949494;
+	border-radius: .214em;
+	-webkit-border-radius: .214em;
+	-moz-border-radius: .214em;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	         box-shadow: inset 0 1px 0 #fff;
+    		-webkit-box-shadow: inset 0 1px 0 #fff;
+    		-moz-box-shadow: inset 0 1px 0 #fff;
+    		-o-box-shadow: inset 0 1px 0 #fff;
+	cursor: pointer;
+	display: block;
+	}
+	.full-bg nav li a:hover,
+	.full-bg nav li a:focus {
+		box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+    		-webkit-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+    		-moz-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+    		-o-box-shadow: 0 0 7px rgba(0,0,0,0.4), inset 0 1px 0 #fff;
+		}
+	.full-bg nav li a:active {
+		background: #ccc;
+		background: -webkit-gradient(linear, left top, left bottom, from(#c3c3c3), to(#ebebeb));
+		background: -moz-linear-gradient(top, #c3c3c3, #ebebeb);
+		border-color: #a6a6a6;
+		border-top-color: #939393;
+		border-bottom-color: #bcbcbc;
+			box-shadow: inset 0 -1px 0 #fff;
+    		-webkit-box-shadow: inset 0 -1px 0 #fff;
+    		-moz-box-shadow: inset 0 -1px 0 #fff;
+    		-o-box-shadow: inset 0 -1px 0 #fff;
+		}
+.full-bg nav li a.default {
+	color: #1c4257;
+	background: #a3cde3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b9e0f5), to(#85b2cb));
+	background: -moz-linear-gradient(top, #b9e0f5, #85b2cb);
+	border: 1px solid #759bb1;
+	border-top-color: #8ab0c6;
+	border-bottom-color: #587e93;
+		
+	}
+	.full-bg nav li a:hover,
+	.full-bg nav li a:focus {
+	box-shadow: 0 0 7px #53a6d5;
+		     box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+    		-webkit-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+    		-moz-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+    		-o-box-shadow: 0 0 7px #53a6d5, inset 0 1px 0 #fff;
+			
+		}
+	.full-bg nav li a.default:active {
+		background: #8abcd7;
+		background: -webkit-gradient(linear, left top, left bottom, from(#81afc8), to(#b7def4));
+		background: -moz-linear-gradient(top, #81afc8, #b7def4);
+		border-color: #6e94a9;
+		border-top-color: #567c91;
+		border-bottom-color: #88aec4;
+		box-shadow: inset 0 -1px 1px #fff;
+    		-webkit-box-shadow: inset 0 -1px 1px #fff;
+    		-moz-box-shadow: inset 0 -1px 1px #fff;
+    		-o-box-shadow: inset 0 -1px 1px #fff;
+		
+		
+		}		
+		
+		
+		
+		
+		
+		
+		
+		
+/* Bruno Marrs type styles */	
+		
+.full-header .header-container {
+	background: transparent url(../skins/brunomars/img/stripe.png) repeat-x 0 0;
+}
+.full-header .wrapper {
+    background: transparent url(../skins/brunomars/img/header1.jpg) no-repeat -127px 26px;
+    float: left;
+}
+.full-header #logo {
+    height: 292px;
+}
+.full-header #logo a, .full-header #logo span {
+    background: transparent;
+    overflow: hidden;
+    text-indent: -9999em;
+}
+.full-header #back2site {
+	background: url(../img/icons/arrow_l.png) no-repeat 0 2px;
+	left: 0;
+    top: 6px;
+    padding: 0 0 0 16px;
+    color: #fff;
+}
+.full-header #back2site:hover,
+.full-header #back2site:focus {
+	background: #ccc url(../img/icons/arrow_r.png) no-repeat 0 -27px;
+	text-decoration: none;
+}
+.full-header .headerFunctions {
+    clear: right;
+    margin-top: 2.6em;
+}
+.full-header .headerFunctions a {
+    color: #fff;
+}
+.full-header #switches a {
+	color: #222;
+}
+.full-header .nav-container {
+	background: rgba(0,0,0,0.8);	
+}
+.full-header nav li a {
+	color: #fff;	
+}
+.full-header #page {
+    background: transparent;
+}
+
+/* Mini Cart and Search */
+.full-header .quick-access {
+	background: rgba(0,0,0,0.7);
+}
+/*
+.full-header .quick-access,
+.full-header .quick-access a {
+	color: #fff;
+}
+.full-header #search_mini_form input.button {
+	background: rgba(0,0,0,0.7);
+}
+.full-header #accountLinks a {
+	background-position: 90px -21px;
+}
+.full-header #accountLinks a:hover,
+.full-header #accountLinks a:focus {
+	background-position: 90px 9px;
+}
+.full-header #cartBtn {
+	background-position: 298px -17px;
+}
+.full-header #cartBtn:hover,
+.full-header #cartBtn:focus {
+	background-position: 298px 13px;
+}
+*/
+.full-header #logo {
+	background: transparent; 
+}
+
+/* Product Grid Row Title */
+.featured-title {
+    border-bottom: 3px solid #000000;
+}
+.featured-title h5 {
+   background: #000;
+   color: #fff;
+}
+
+
+.nav2 li {
+    float: left;
+    font-size: 1.8em;
+    background: url(../img/icons/tilda2.png) no-repeat 100% 50%;
+    padding-right: 13px;
+    margin-right: 0;
+}
+.nav2 li.last {
+    background: none;
+}
+
+/*
+#social {
+	float: right;
+	margin: 26px 0 0 0;
+}
+#social a {
+	width: 90px;
+	height: 27px;
+	background: url(../img/icons/social.png) no-repeat 0 0;
+	display: block;
+}
+#helpLink {
+	float: right;
+	margin: 36px 0 0 0;
+	display: none;
+}
+#helpLink a {
+	font-size: 1.4em;
+	text-decoration: underline;
+	color: #555;
+}
+*/
+
+
+/* Cart with search on left */
+.headerb #myAccountLink {
+	float: right;
+	border: none;
+	border-left: 1px solid #ccc;
+}
+.headerb #myAccountLink a {
+    background-position: 88px 14px;
+    width: 87px;
+}
+.headerb #myAccountLink a:hover,
+.headerb #myAccountLink a:focus {
+    background-position: 88px -16px;
+}
+.headerb #searchReveal {
+	float: left;
+	margin-left: 10px;
+}
+.headerb #switches {
+	float: right;
+	margin-right: 24px;
+}
+.headerb #switches .sbHolder {
+    width: 120px;
+}
+.headerb #switches .sbOptions {
+    width: 165px;
+}
+.headerb #chkOutBtn a {
+	padding-left: 9px;
+}
