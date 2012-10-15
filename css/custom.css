@@ -32,7 +32,7 @@
 .quick-access a {
 	color: #222;
 }
-#search_mini_form input.button {
+#search_mini_form button {
 	background: #ccc;
 }
 
@@ -369,6 +369,7 @@ body.full-bg  {
 
 
 /* Cart with search on left */
+/*
 .headerb #myAccountLink {
 	float: right;
 	border: none;
@@ -399,3 +400,4 @@ body.full-bg  {
 .headerb #chkOutBtn a {
 	padding-left: 9px;
 }
+*/

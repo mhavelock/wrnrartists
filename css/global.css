@@ -115,10 +115,11 @@ h4, h5, h6 {
 
 #switches.sbox {
 	margin: 0;
-	padding: 6px 0 0 10px;
+	padding: 6px 10px;
+	border-right: 1px solid #CCC;
 }
 #switches .sbHolder {
-    width: 100px;
+    width: 127px;
     height: 20px;
 }
 #switches .sbSelector {
@@ -689,9 +690,9 @@ nav .vert li a:focus {
 .sidebar { min-height:350px; }
 
 /* Base Columns */
-.col-left { float:left; width:196px; padding:20px 0 20px 16px; }
-.col-main { float:left; width:749px; padding:20px 16px 20px 16px; }
-.col-right { float:right; width:196px; padding:20px 16px 20px 0; }
+.col-left { float:left; width:190px; padding:16px 0 20px 16px; }
+.col-main { float:left; width:758px; padding:16px 16px 20px 16px; }
+.col-right { float:right; width:190px; padding:16px 16px 20px 0; }
 
 /* 1 Column Layout */
 .col1-layout { float: left; }
