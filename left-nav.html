@@ -28,7 +28,7 @@
 				            
 				            <div id="topCart">
 				            	<div id="myBasket">
-				            		<p id="cartBtn"><a href="#"><em class="basket_icon"></em><span class="items">View <em>(</em>2<em>)</em> items</span><span><em>{</em><b>&pound;</b>999<em>}</em></span></a></p>				            			
+				            		<p id="cartBtn"><a href="#"><em class="basket_icon"></em><span class="items">View <em>(</em>2<em>)</em> items</span><span><em>[</em><b>&pound;</b>999<em>]</em></span></a></p>				            			
 				            		<p id="chkOutBtn"><a class="arrowLink" href="#">Checkout</a></p>				            	
 				            	</div>
 				            	
@@ -125,23 +125,39 @@
 		            
 		            		<div id="baseLinks">
 				            	<p id="myAccountLink"><a class="arrowLink" href="#">My Account</a></p>
-		            			<div id="switches" class="sbox">
-									<div class="switch switcher-language">
-										<label><span>Select Store</span>:</label>
-										<div class="switch-wrapper" id="languageSelect">
-											<select>
-								                <optgroup label="European Stores">
-												<option value="/de/">Deutsch - Euro</option>
-									           	<option value="/eu/">English - Euro</option>
-									           	<option value="/es/">Español - Euro</option>
-									           	<option value="/fr/">Français - Euro</option>
-									           	<option value="/it/">Italiano - Euro</option>
-												<option value="/en/">English - GBP</option>
-								                </optgroup>
-											</select>
+		            			
+		            			<div class="switches">  
+					    			<div id="storeSwitcherDD">
+										<span class="language en_GB">English</span>
+										<span class="currency currency_£">£ GBP</span>
+									</div>
+									<div id="storeSwitcherOptions">
+										<div class="switch switcher-currency">
+										    <label class="visuallyhidden">Select Currency:</label>
+										    <ul id="currencySelect">
+										        <li class="current currency-GBP">
+										            <span>£</span>
+										        </li>
+				                                <li class="currency-EUR">
+				                                    <a href="#"><span>€</span></a>
+				                                </li>
+				                        	</ul>
 										</div>
+										<div class="switch switcher-language">
+											<label class="visuallyhidden">Select language:</label>
+											<ul id="languageSelect">
+												<li class="current language-en_GB"><a href="#"><span>English</span></a></li>
+												<li class="language-fr_FR"><a href="#"><span>Français</span></a></li>
+												<li class="language-de_DE"><a href="#"><span>Deutsch</span></a></li>
+											</ul>
+										</div>
+			
+			 							<a id="currencyConvertor" class="arrowLink">Currency converter</a>
+			 							<!-- Currency Converter --><div id="fx-converter"><script type="text/javascript" src="http://fx-rate.net/converter.php?size=short&layout=vertical"></script></div>
+			 							
 									</div>
 								</div> <!-- /#switches -->
+								
 								<button id="searchReveal">Search</button>
 				            </div>
 						
@@ -239,10 +255,13 @@
 				                        <p class="short_desc">Inde igitur, inquit, ordiendum est dici videtur.</p>
 				                        <div class="price-container">
 				                           <div class="price-box">
-										    	<p class="regular-price">
-										        	<span class="price">€15.99</span>                
-										        </p>
-										    </div>
+											    	<p class="old-price">
+											        	<span class="price">€15.99</span>                
+											        </p>
+											        <p class="special-price">
+											        	<span class="price">€10.99</span>                
+											        </p>
+											    </div>
 										</div> <!-- /.price-container -->
 				
 				                        <div class="actions">
@@ -301,9 +320,12 @@
 				                        <p class="product-name"><a href="#">Product Name 01</a></p>
 				                        <div class="price-container">
 				                           <div class="price-box">
-										    	<span class="regular-price">
+										    	<p class="old-price">
 										        	<span class="price">€15.99</span>                
-										        </span>
+										        </p>
+										        <p class="special-price">
+										        	<span class="price">€10.99</span>                
+										        </p>
 										    </div>
 				                        </div> <!-- /.price-container -->
 				
@@ -379,9 +401,10 @@
 						<li><a href="#">FAQs/Help</a></li>
 						<li><a href="#">Contact Us</a></li>
 					</ul>
-				</div>
-			</div> <!-- /.footer-container -->
-				
+					<div id="payment-options">WORLDWIDE<br>SHIPPING</div>
+					</div>
+				</div> <!-- /.footer-container -->
+				<div id="cookiePolicy" style="display: block;"><p>This site uses cookies.  By continuing to browse the site you are agreeing to our use of cookies. <a href="http://www.wminewmedia.com/cookies_policy21062012.htm" title="Find out more about our cookie policy">Find out more</a></p><button class="close">Close</button></div>
 			
 		</div> <!-- /.wrapper -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
@@ -389,5 +412,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/jquery.cookie.js"></script>
     </body>
 </html>

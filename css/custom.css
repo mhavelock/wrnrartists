@@ -14,7 +14,7 @@
 	background: #e0e0e0;
 }
 #page {
-    background: url(../img/backgrounds/strange_bullseyes.png) repeat 0 0;
+    background: #efefef;
 }
 .footer-container {
 	background: rgba(0,0,0,0.5);
@@ -71,10 +71,10 @@
 
 
 body.full-bg  {
-	background: #000 url(../skins/greenday/img/body-bg.jpg) no-repeat 0 0;
+	background: #000 url(../skins/body-bg.jpg) no-repeat 0 0;
 }
 .full-bg .wrapper {
-	background: transparent url(../skins/greenday/img/header-bg.png) no-repeat 50% 10px;
+	background: transparent url(../skins/header-bg.png) no-repeat 50% 10px;
 	float: left;
 }
 .full-bg .header-container {
@@ -109,7 +109,7 @@ body.full-bg  {
     background: transparent;
 }
 .full-bg .main {
-	background: transparent url(../skins/greenday/img/shadow-bg.png) repeat-y 0 0;
+	background: transparent url(../skins/shadow-bg.png) repeat-y 0 0;
 }
 .full-bg .footer-container {
 	background: rgba(0,0,0,0.5);
@@ -401,3 +401,34 @@ body.full-bg  {
 	padding-left: 9px;
 }
 */
+
+#currencyConvertor {
+	background-position: 101px 12px;
+    border-top: 1px solid #999999;
+    font-size: 1.1em;
+    margin: 0 10px;
+    padding: 12px 12px 12px 0;
+    width: 99px;
+    cursor: pointer;
+}    
+#fx-converter {
+	clear: both;
+	width:131px; 
+	background-color: #fff;
+	text-align:center;
+	padding:0px;
+	margin:0px
+}
+#fx-converter .fxConverterInner {
+	margin:0px; 
+	padding: 3px 0 2px 0;
+	text-align:center;
+	background-color:#ccc;
+	border:1px solid #888;
+	width: 100%;
+}
+#fx-converter .VSlabel {
+	text-weight:bold;
+	text-decoration:none;
+	color:#000000;
+}

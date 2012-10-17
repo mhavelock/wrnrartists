@@ -28,7 +28,7 @@
 				            
 				            <div id="topCart">
 				            	<div id="myBasket">
-				            		<p id="cartBtn"><a href="#"><em class="basket_icon"></em><span class="items">View <em>(</em>2<em>)</em> items</span><span><em>{</em><b>&pound;</b>999<em>}</em></span></a></p>				            			
+				            		<p id="cartBtn"><a href="#"><em class="basket_icon"></em><span class="items">View <em>(</em>2<em>)</em> items</span><span><em>[</em><b>&pound;</b>599.95<em>]</em></span></a></p>				            			
 				            		<p id="chkOutBtn"><a class="arrowLink" href="#">Checkout</a></p>				            	
 				            	</div>
 				            	
@@ -43,7 +43,7 @@
 											    <a class="product-image" title="title" href="#"><img alt="alt" src="media/catalog/prod90x90.jpg"></a>
 											    <div class="product-details">
 											        <p class="product-name">
-											        	<a href="#">Item 01 &ndash; Red</a>
+											        	<a href="#">Product Item 01</a>
 											        </p>
 											        <table cellpadding="0">
 														<tbody>
@@ -68,8 +68,78 @@
 											            </div>
 											        </div> <!-- /.truncated -->
 											        <div class="cartDetailsActions">
-											        	<a class="details" onclick="return false;" href="#">View Details</a> |
-										            	<a class="btn-edit" title="Edit item" href="#">Edit item</a>  |
+											        	<a class="details" onclick="return false;" href="#">View Details</a>&nbsp; &nbsp;|&nbsp; &nbsp; 
+										            	<a class="btn-edit" title="Edit item" href="#">Edit item</a> &nbsp; &nbsp;|&nbsp; &nbsp; 
+												        <a class="btn-remove" title="Remove item" href="#">Remove item</a>
+										            </div> <!-- /.cartDetailsActions -->
+											    </div>
+											</li>
+											<li class="item even">
+											    <a class="product-image" title="title" href="#"><img alt="alt" src="media/catalog/prod90x90.jpg"></a>
+											    <div class="product-details">
+											        <p class="product-name">
+											        	<a href="#">Product Item 01</a>
+											        </p>
+											        <table cellpadding="0">
+														<tbody>
+															<tr>
+											                	<th>Price</th>
+											                    <td><span class="price">£225.00</span></td>
+											                </tr>
+											                <tr>
+											                	<th>Qty</th>
+											                	<td>1</td>
+											            	</tr>
+											        	</tbody>
+											        </table>
+											        <div class="truncated">
+											            <div class="truncated_full_value">
+											                <div class="item-options">
+											                    <dl>
+											                        <dt>Size</dt>
+											                        <dd>M</dd>
+											                    </dl>
+											                </div>
+											            </div>
+											        </div> <!-- /.truncated -->
+											        <div class="cartDetailsActions">
+											        	<a class="details" onclick="return false;" href="#">View Details</a>&nbsp; &nbsp;|&nbsp; &nbsp; 
+										            	<a class="btn-edit" title="Edit item" href="#">Edit item</a> &nbsp; &nbsp;|&nbsp; &nbsp; 
+												        <a class="btn-remove" title="Remove item" href="#">Remove item</a>
+										            </div> <!-- /.cartDetailsActions -->
+											    </div>
+											</li>
+											<li class="item odd">
+											    <a class="product-image" title="title" href="#"><img alt="alt" src="media/catalog/prod90x90.jpg"></a>
+											    <div class="product-details">
+											        <p class="product-name">
+											        	<a href="#">Product Item 01</a>
+											        </p>
+											        <table cellpadding="0">
+														<tbody>
+															<tr>
+											                	<th>Price</th>
+											                    <td><span class="price">£225.00</span></td>
+											                </tr>
+											                <tr>
+											                	<th>Qty</th>
+											                	<td>1</td>
+											            	</tr>
+											        	</tbody>
+											        </table>
+											        <div class="truncated">
+											            <div class="truncated_full_value">
+											                <div class="item-options">
+											                    <dl>
+											                        <dt>Size</dt>
+											                        <dd>M</dd>
+											                    </dl>
+											                </div>
+											            </div>
+											        </div> <!-- /.truncated -->
+											        <div class="cartDetailsActions">
+											        	<a class="details" onclick="return false;" href="#">View Details</a>&nbsp; &nbsp;|&nbsp; &nbsp; 
+										            	<a class="btn-edit" title="Edit item" href="#">Edit item</a> &nbsp; &nbsp;|&nbsp; &nbsp; 
 												        <a class="btn-remove" title="Remove item" href="#">Remove item</a>
 										            </div> <!-- /.cartDetailsActions -->
 											    </div>
@@ -92,16 +162,7 @@
 											            	</tr>
 											        	</tbody>
 											        </table>
-											        <div class="truncated">
-											            <div class="truncated_full_value">
-											                <div class="item-options">
-											                    <dl>
-											                        <dt>Size</dt>
-											                        <dd>M</dd>
-											                    </dl>
-											                </div>
-											            </div>
-											        </div> <!-- /.truncated -->
+											        
 											        <div class="cartDetailsActions">
 											        	<a class="details" onclick="return false;" href="#">View Details</a> |
 										            	<a class="btn-edit" title="Edit item" href="#">Edit item</a>  |
@@ -109,6 +170,7 @@
 										            </div> <!-- /.cartDetailsActions -->
 											    </div> <!-- /.product-details -->
 											</li>
+											
 										</ol>
 										<p class="subtotal">
 											<span class="label">Cart Subtotal:</span> <span class="price">£450.00</span>                            
@@ -125,23 +187,39 @@
 		            
 		            		<div id="baseLinks">
 				            	<p id="myAccountLink"><a class="arrowLink" href="#">My Account</a></p>
-		            			<div id="switches" class="sbox">
-									<div class="switch switcher-language">
-										<label><span>Select Store</span>:</label>
-										<div class="switch-wrapper" id="languageSelect">
-											<select>
-								                <optgroup label="European Stores">
-												<option value="/de/">Deutsch - Euro</option>
-									           	<option value="/eu/">English - Euro</option>
-									           	<option value="/es/">Español - Euro</option>
-									           	<option value="/fr/">Français - Euro</option>
-									           	<option value="/it/">Italiano - Euro</option>
-												<option value="/en/">English - GBP</option>
-								                </optgroup>
-											</select>
+		            			
+		            			<div class="switches">  
+					    			<div id="storeSwitcherDD">
+										<span class="language en_GB">English</span>
+										<span class="currency currency_£">£ GBP</span>
+									</div>
+									<div id="storeSwitcherOptions">
+										<div class="switch switcher-currency">
+										    <label class="visuallyhidden">Select Currency:</label>
+										    <ul id="currencySelect">
+										        <li class="current currency-GBP">
+										            <span>£</span>
+										        </li>
+				                                <li class="currency-EUR">
+				                                    <a href="#"><span>€</span></a>
+				                                </li>
+				                        	</ul>
 										</div>
+										<div class="switch switcher-language">
+											<label class="visuallyhidden">Select language:</label>
+											<ul id="languageSelect">
+												<li class="current language-en_GB"><a href="#"><span>English</span></a></li>
+												<li class="language-fr_FR"><a href="#"><span>Français</span></a></li>
+												<li class="language-de_DE"><a href="#"><span>Deutsch</span></a></li>
+											</ul>
+										</div>
+			
+			 							<a id="currencyConvertor" class="arrowLink">Currency converter</a>
+			 							<!-- Currency Converter --><div id="fx-converter"><script type="text/javascript" src="http://fx-rate.net/converter.php?size=short&layout=vertical"></script></div>
+			 							
 									</div>
 								</div> <!-- /#switches -->
+
 								<button id="searchReveal">Search</button>
 				            </div>
 						
@@ -245,7 +323,7 @@
 				                    	<!-- <span class="new"></span> -->
 				                    	<img width="470" height="470" alt="Product Name 01" src="media/catalog/prod02_170x170.jpg"></a>
 				                    <div class="prod-grid-desc">
-				                        <p class="product-name"><a href="#">Product Name 01</a></p>
+				                        <p class="product-name"><a href="#">Product Name with a really long product name with more words.</a></p>
 				                        <p class="short_desc">Inde igitur, inquit, ordiendum est dici videtur.</p>
 				                        <div class="price-container">
 				                           <div class="price-box">
@@ -266,7 +344,7 @@
 				                    	<img width="470" height="470" alt="Product Name 01" src="media/catalog/prod03_170x170.jpg"></a>
 				                    <div class="prod-grid-desc">
 				                        <p class="product-name"><a href="#">Product Name 01</a></p>
-				                        <p class="short_desc">Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur.</p>
+				                        <p class="short_desc">Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur. ed tamen omne, quod de re bona dilucide dicitur.</p>
 				                        <div class="price-container">
 				                           <div class="price-box">
 										    	<p class="regular-price">
@@ -292,6 +370,7 @@
 						                    <a title="Product Name 01" href="#" class="product-image"><img width="300" height="300" alt="Product Name 01" src="media/catalog/prod04_170x170.jpg"></a>
 						                    <div class="prod-grid-desc">
 						                        <p class="product-name"><a href="#">Product Name 01</a></p>
+						                        <p class="short_desc">Inde igitur, inquit, ordiendum est.</p>
 						                        <div class="price-container">
 						                           <div class="price-box">
 												    	<span class="regular-price">
@@ -308,7 +387,8 @@
 										<li class="item">
 						                    <a title="Product Name 01" href="#" class="product-image"><img width="300" height="300" alt="Product Name 01" src="media/catalog/prod01_170x170.jpg"></a>
 						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
+						                        <p class="product-name"><a href="#">Product Name 02</a></p>
+						                        <p class="short_desc">Inde igitur, inquit, ordiendum est dici videtur.</p>
 						                        <div class="price-container">
 						                           <div class="price-box">
 												    	<span class="regular-price">
@@ -325,11 +405,15 @@
 										<li class="item last">
 						                    <a title="Product Name 01" href="#" class="product-image"><img width="300" height="300" alt="Product Name 01" src="media/catalog/prod03_170x170.jpg"></a>
 						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
+						                        <p class="product-name"><a href="#">Product Name three</a></p>
+						                        <p class="short_desc">Inde igitur, inquit, ordiendum est dici videtur inquit, ordiendum est.</p>
 						                        <div class="price-container">
 						                           <div class="price-box">
-												    	<p class="regular-price">
+												    	<p class="old-price">
 												        	<span class="price">€15.99</span>                
+												        </p>
+												        <p class="special-price">
+												        	<span class="price">€10.99</span>                
 												        </p>
 												    </div>
 												</div> <!-- /.price-container -->
@@ -523,76 +607,81 @@
 								<div class="center-rel-inner">
 									<ul class="products-grid four-row">
 						                <li class="item first">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod04_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<span class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </span>
-												    </div>
-						                        </div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                        
-						                        <div class="further_details">
-						                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non potes, nisi retexueris illa. Septem autem illi non suo, sed populorum suffragio omnium nominati sunt. Quam non satisf…</p>
-						                        </div>
+						                    <div class="prodDetailWrap">
+						                    	<a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod04_170x170.jpg"></a>
+							                    <div class="prod-grid-desc">
+							                        <p class="product-name"><a href="#">Product Name 01</a></p>
+							                        <div class="price-container">
+							                           <div class="price-box">
+													    	<span class="regular-price">
+													        	<span class="price">€15.99</span>                
+													        </span>
+													    </div>
+							                        </div> <!-- /.price-container -->
+	
+							                        <div class="further_details">
+							                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non potes, nisi retexueris illa. Septem autem illi non suo, sed populorum suffragio…</p>
+							                        </div>
+							                    </div>
 						                    </div>
+						                    <div class="actions">
+												<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
+					                        </div>
 										</li>
 										<li class="item">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod01_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<span class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </span>
-												    </div>
-						                        </div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
+						                    <div class="prodDetailWrap">
+							                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod01_170x170.jpg"></a>
+							                    <div class="prod-grid-desc">
+							                        <p class="product-name"><a href="#">Product Name 01</a></p>
+							                        <div class="price-container">
+							                           <div class="price-box">
+													    	<span class="regular-price">
+													        	<span class="price">€15.99</span>                
+													        </span>
+													    </div>
+							                        </div> <!-- /.price-container -->
+							                    </div>
+							                </div>
+						                    <div class="actions">
+												<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
 						                    </div>
+						                    
 										</li>
 										<li class="item">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod02_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<p class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </p>
-												    </div>
-						                        </div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
+						                    <div class="prodDetailWrap">
+							                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod02_170x170.jpg"></a>
+							                    <div class="prod-grid-desc">
+							                        <p class="product-name"><a href="#">Product Name 01</a></p>
+							                        <div class="price-container">
+							                           <div class="price-box">
+													    	<p class="regular-price">
+													        	<span class="price">€15.99</span>                
+													        </p>
+													    </div>
+							                        </div> <!-- /.price-container -->
+							                    </div>
+							                </div>
+						                    <div class="actions">
+												<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
+					                        </div>
 										</li>
 										<li class="item last">
-						                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod03_170x170.jpg"></a>
-						                    <div class="prod-grid-desc">
-						                        <p class="product-name"><a href="#">Product Name 01</a></p>
-						                        <div class="price-container">
-						                           <div class="price-box">
-												    	<p class="regular-price">
-												        	<span class="price">€15.99</span>                
-												        </p>
-												    </div>
-												</div> <!-- /.price-container -->
-						
-						                        <div class="actions">
-													<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
-						                        </div>
-						                    </div>
+											<div class="prodDetailWrap">
+							                    <a title="Product Name 01" href="#" class="product-image"><img width="180" height="180" alt="Product Name 01" src="media/catalog/prod03_170x170.jpg"></a>
+							                    <div class="prod-grid-desc">
+							                        <p class="product-name"><a href="#">Product Name 01</a></p>
+							                        <div class="price-container">
+							                           <div class="price-box">
+													    	<p class="regular-price">
+													        	<span class="price">€15.99</span>                
+													        </p>
+													    </div>
+													</div> <!-- /.price-container -->
+							                    </div>
+							                </div>
+						                    <div class="actions">
+												<button title="View Details" class="btn-cart" type="button"><span>View Details</span></button>
+					                        </div>
 										</li>
 					                </ul>
 								</div>
@@ -617,14 +706,16 @@
 						<li><a href="#">FAQs/Help</a></li>
 						<li><a href="#">Contact Us</a></li>
 					</ul>
+					<div id="payment-options">WORLDWIDE<br>SHIPPING</div>
 				</div>
 			</div> <!-- /.footer-container -->
-			
+			<div id="cookiePolicy" style="display: block;"><p>This site uses cookies.  By continuing to browse the site you are agreeing to our use of cookies. <a href="http://www.wminewmedia.com/cookies_policy21062012.htm" title="Find out more about our cookie policy">Find out more</a></p><button class="close">Close</button></div>
 		</div> <!-- /.wrapper -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/jquery.cookie.js"></script>
     </body>
 </html>

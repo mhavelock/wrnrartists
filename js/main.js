@@ -4,28 +4,70 @@ jQuery(function() {
 	html5placeholder();
 	showHide('cartPanel', 'cartBtn');
 	showHide2('search_mini_form', 'searchReveal');
+	showHide2('fx-converter', 'currencyConvertor');
 	menuCurrentHighlight();
 	removeDefaultOption();
-	// dropDownCountries();
+	dropDownCountries();
 	tabbedContentFade();
 	tabbedContent();
+	showCookiePolicy();
 	
 	$j('.sbox select').selectbox(); /* in plugins.js */
-	
+	equalHeight( $j('.prodDetailWrap') );
+	equalHeight( $j('.two-row .product-name') );
+	equalHeight( $j('.two-row .short_desc') );
+	equalHeight( $j('.three-row .product-name') );
+	equalHeight( $j('.three-row .short_desc') );
     // twitterGPlus();
     
     // if ($j('#Form').length) {
 	// 	$j("#Form").validate();
 	// };
 	
+	$j("#mini-cart").animate({ scrollTop: $j("#mini-cart").prop("scrollHeight") }, 3000);
+	
+	if ($j('.more-views ul').length) {
+    	$j('.more-views ul').jcarousel();
+    };
 });
 
 
+function showCookiePolicy() {
+	if(!jQuery.cookie('new_customer') ) {			
+		jQuery('#cookiePolicy').fadeIn();		
+	}	
+	
+	jQuery('#cookiePolicy .close').click(function(){
+		if(!jQuery.cookie('new_customer') ) {
+			jQuery.cookie('new_customer', 'true', { expires: 365, path: '/'} );						
+		}	
+		jQuery('#cookiePolicy').fadeOut();
+	});
+};
+
+
 function dropDownCountries() {
-    $j('#switches').find('option').each(function() {
-        var country = $j(this).val().replace(/\//g, '');
-        $j(this).addClass(country);
-    });
+    var dd = $j('#storeSwitcherDD');
+    
+    if(dd.length) {
+
+    	/*
+    	dd.find('span').each(function() {
+    		$j(this).html($j(this).html().replace('€', '€ EUR').replace('£', '£ GBP').replace('de_DE', 'Deutsch').replace('en_GB', 'English').replace('es_ES', 'Español').replace('fr_FR', 'Français').replace('it_IT', 'Italiano'));
+    	});
+    	$j('#languageSelect').find('li a span').each(function() {
+    		$j(this).html($j(this).html().replace('de_DE', 'Deutsch').replace('en_GB', 'English').replace('es_ES', 'Español').replace('fr_FR', 'Français').replace('it_IT', 'Italiano'));
+    	});
+    	*/
+    	
+		dd.css({'cursor':'pointer'});
+		$j('#storeSwitcherOptions').css({'display':'none','position':'absolute'});
+		dd.click(function() {
+			$j(this).toggleClass('active').parent().find('#storeSwitcherOptions').slideToggle();
+		});
+	
+    };
+
 };
 
 
