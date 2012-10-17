@@ -698,6 +698,11 @@ nav li a {
 	text-decoration: none;
 }
 /* Column left layout */
+.col2-left-layout nav {
+	margin: 0;
+	width: 100%;
+	min-width: 0;
+}
 nav .vert  {
 	padding: 24px 9px 12px 18px;
 }
