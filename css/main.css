@@ -886,8 +886,10 @@
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	display: block;
+	z-index: 1;
 }
-.one-item .base-bar {
+.one-item .base-bar,
+.three-row .base-bar {
 	bottom: 0;
 	right: 0;
 	width: 100%;
@@ -901,10 +903,6 @@
 	line-height: 1;
 }
 
-.one-item .new-badge {
-
-}
-
 .two-row .base-sash {
 	bottom: 0;
 	background-image: url(../img/banners/badge_2_base_sash.png);
@@ -914,7 +912,7 @@
     width: 340px;
 	height: 66px;
 }
-.two-row .internet-exclusive {
+.two-row .base-sash.internet-exclusive {
     color: #fff;
     font-size: 1.7em;
     height: 47px;
@@ -923,32 +921,43 @@
     width: 282px;
 }
 
-badge_2_star.png
-
-
-.internet-exclusive {
-
-}
-.two-row .limited-edition {
-	bottom: 0;
-	background-image: url(../img/banners/badge_1_new.png);
+.two-row .star {
+	top: 16px;
+	background-image: url(../img/banners/badge_2_star.png);
     color: #fff;
     font-size: 1.7em;
-    height: 47px;
-    padding: 24px 0 0 59px;
+    height: 160px;
+    right: 16px;
+    width:160px;
+}
+.two-row .star.limited-edition {
+    color: #fff;
+    font-size: 1.7em;
+    line-height: 1;
+    text-align: center;
+    padding-top: 55px;
+    height: 105px;
+}
+
+.three-row .top-cnr-sash {
+	top: 0;
     right: 0;
-    width: 282px;
-
+    width: 120px;
+	height: 118px;
+	overflow: hidden;
+	text-indent: -999em;
 }
-.sale {
-
+.three-row .top-cnr-sash.new {
+    background-image: url(../img/banners/corner_new2.png);
 }
-.sold-out {
 
+.three-row .base-bar {
+	font-size: 1.3em;
 }
-.pre-order {
 
-}
+.sale { }
+.sold-out { }
+.pre-order { }
 
 /* Left Nav 'Magento Layout' */
 .col2-left-layout #bannertabs img {
