@@ -141,7 +141,7 @@
 }
 .one-item .product-image {
 	margin: 0 20px 0 0;
-	padding: 0;
+	padding: 0 0 6px 0;
 	border: 0;
 }
 .one-item .prod-grid-desc {
@@ -881,8 +881,74 @@
 
 
 
+.badge {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: block;
+}
+.one-item .base-bar {
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 22px;
+	background-image: url(../img/banners/red_opacity.png);
+	background-repeat: repeat;
+	text-align: center;
+	padding: 8px 0;
+	color: #fff;
+	font-size: 1.8em;
+	line-height: 1;
+}
+
+.one-item .new-badge {
+
+}
+
+.two-row .base-sash {
+	bottom: 0;
+	background-image: url(../img/banners/badge_2_base_sash.png);
+    font-size: 1.7em;
+    padding: 0;
+    right: 0;
+    width: 340px;
+	height: 66px;
+}
+.two-row .internet-exclusive {
+    color: #fff;
+    font-size: 1.7em;
+    height: 47px;
+    padding: 24px 0 0 59px;
+    right: 0;
+    width: 282px;
+}
+
+badge_2_star.png
 
 
+.internet-exclusive {
+
+}
+.two-row .limited-edition {
+	bottom: 0;
+	background-image: url(../img/banners/badge_1_new.png);
+    color: #fff;
+    font-size: 1.7em;
+    height: 47px;
+    padding: 24px 0 0 59px;
+    right: 0;
+    width: 282px;
+
+}
+.sale {
+
+}
+.sold-out {
+
+}
+.pre-order {
+
+}
 
 /* Left Nav 'Magento Layout' */
 .col2-left-layout #bannertabs img {
@@ -1265,3 +1331,6 @@
 /* ================================= Solution by www.h-o.nl =============================== */
 
 
+.onestepcheckout-enterprise li {
+	list-style: none;
+}
