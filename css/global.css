@@ -759,6 +759,7 @@ nav .vert  {
 nav .vert li {
 	clear: left;
 	margin: 0 0 20px 0;
+	border: none;
 }
 nav .vert li {
 	font-size: 1.6em;

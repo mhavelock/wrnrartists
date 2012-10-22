@@ -788,9 +788,6 @@ img.right {
 /* Forms */
 fieldset,
 div.fieldset {
-	clear: left;
-	overflow: hidden;
-	margin: 0 0 10px 0;
 	border:0; 
 }
 legend {

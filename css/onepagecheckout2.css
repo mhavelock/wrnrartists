@@ -164,7 +164,7 @@ p.onestepcheckout-description {
 	width: 220px;
 	position: relative;
 	margin: 0;
-	padding: 9px 7px 6px 7px;
+	padding: 6px 7px 3px 7px;
 	border: 1px solid #bbb;
 	background: transparent;
 	font: inherit;
@@ -177,6 +177,9 @@ p.onestepcheckout-description {
 	-moz-box-shadow: inset 0 1px 0 #bbb;
 	box-shadow: inset 0 1px 0 #bbb;
 	text-transform: uppercase;
+}
+.onestepcheckout-threecolumns input[type=text], x:-moz-any-link {
+	padding: 9px 7px 6px 7px;
 }
 .onestepcheckout-threecolumns input::-webkit-input-placeholder {
 	color: #888;
@@ -421,7 +424,7 @@ table.onestepcheckout-summary {
 #id_couponcode {
 	float: left;
 	margin: 0;
-    width: 186px;
+    width: 179px;
     -webkit-border-top-right-radius: 0;
 	-webkit-border-bottom-right-radius: 0;
 	-moz-border-radius-topright: 0;
@@ -430,6 +433,9 @@ table.onestepcheckout-summary {
 	border-bottom-right-radius: 0;
 	font-size: 12px;
 	color: #aaa;
+}
+#id_couponcode, x:-moz-any-link {
+	width: 186px;
 }
 #onestepcheckout-coupon-add {
     float: left;
