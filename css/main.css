@@ -1165,10 +1165,12 @@
 /* Checkout */
 
 /* ======================= Improved One Page Checkout with tabs  ======================== */
+/*
 .block-progress .block-title { background:none; margin:0 0 34px; padding:0; }
 .checkout-onepage-index .col-main { padding:0; border:0; }
 .checkout-onepage-index .page-title { padding-right:40px; width:auto; }
 .checkout-onepage-index .page-title h1 { background:none; padding:0; }
+*/
 
 .opc { position:relative; overflow:hidden; height:970px; padding-top:20px; text-align:center; border:1px solid #BBAFA0; background:#F9F3E3; }
 .opc .buttons-set { margin:15px 0 0; opacity:1!important; }

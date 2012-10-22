@@ -20,15 +20,53 @@ jQuery(function() {
 	equalHeight( $j('.three-row .short_desc') );
     // twitterGPlus();
     
-    // if ($j('#Form').length) {
-	// 	$j("#Form").validate();
-	// };
+    /*
+    if ($j('#form').length) {
+	 	$j("#form").validate();
+	};
+	*/
 	
 	$j("#mini-cart").animate({ scrollTop: $j("#mini-cart").prop("scrollHeight") }, 3000);
 	
 	if ($j('.more-views ul').length) {
     	$j('.more-views ul').jcarousel();
     };
+    
+    if ($j('.form-list input').length) {
+    	$j('.form-list input').each(function() {
+			$j(this).change(function() {
+				if($j(this).val() !== $j(this).attr('placeholder')) {		
+			  		$j(this).addClass('changed');
+				}
+			});
+		});
+	}
+	if ($j('.form-list').length) {
+    	$j(this).delegate('.sbHolder a:first-child','click',function(){
+				// $j(this).parent().find('.sbSelector').text()
+				// $j(this).parent().find('.sbOptions li:first-child a').text()
+			$j(this).parents('.sbHolder').addClass('changed');
+		});
+	}
+	
+	/*
+	$j('.product-options .size').delegate('.sbHolder','click',function(){
+			if($j(this).find('.sbOptions li:visible:first-child')) $j(this).find('.sbOptions li:first-child').addClass("empty");
+			else $j(this).find('.sbOptions li:first-child').removeClass("empty")
+		});
+		*/
+	
+	
+	/* Temp */
+	if ($j('#billing\\:email').length) {
+			$j('#billing\\:email').change(function() {				
+				if($j(this).val() !== $j(this).attr('placeholder')) {		
+			  		$j('#onestepcheckout-email-error').addClass('error').css('display','block');
+				}
+			});
+	}
+	
+
 });
 
 
@@ -134,8 +172,8 @@ function tabbedContent(){
 
 
 function removeDefaultOption() {
-	if($j('.product-options .size').length) {
-		$j('.product-options .size').delegate('.sbHolder','click',function(){
+	if($j('.product-options .size').length || ('#billing_address_list .input-region').length || ('.payment-methods .payment-methods').length ) {
+		$j('.product-options .size, #billing_address_list .input-region, .payment-methods .payment-methods').delegate('.sbHolder','click',function(){
 			if($j(this).find('.sbOptions li:visible:first-child')) $j(this).find('.sbOptions li:first-child').addClass("empty");
 			else $j(this).find('.sbOptions li:first-child').removeClass("empty")
 		});

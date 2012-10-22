@@ -1,3 +1,272 @@
+/* Section Titles */
+.onestepcheckout-numbers {
+    color: #404040;
+    text-transform: uppercase;
+    padding: 6px 0 16px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.onestepcheckout-number-block {
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 8px;
+    margin: 0 9px 0 0;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+}
+
+/* List styles */
+.onestepcheckout-threecolumns ul,
+.onestepcheckout-threecolumns ol {
+	list-style: none;
+}
+.onestepcheckout-threecolumns li li {
+	margin-left: 0;
+}
+/*
+.onestepcheckout-threecolumns input[type=text] {
+    padding: 7px 3px 6px 4px;
+}
+*/
+.onestepcheckout-threecolumns select {
+    padding: 7px 5px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 84.6%;
+}
+.onestepcheckout-threecolumns .sbHolder {
+	border: 1px solid #ccc;
+	/* height: 22px; */
+}
+/*
+.onestepcheckout-threecolumns .sbSelector {
+    height: 30px;
+    line-height: 30px;
+}
+*/
+.onestepcheckout-threecolumns .sbOptions {
+    width: 206px;
+}
+
+
+/* Title Section */
+p.onestepcheckout-description {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 3px 0;
+}
+
+/* Columns */
+.onestepcheckout-threecolumns {
+    margin: 20px 0 15px 0;
+    background: url(../img/checkout/fauxcolumns.png) repeat-y 346px 0;
+    overflow: hidden;
+}
+.onestepcheckout-threecolumns .onestepcheckout-column-left {
+    width: 330px;
+    float: left;
+    margin-right: 36px;
+}
+.onestepcheckout-threecolumns .onestepcheckout-column-middle {
+    width: 266px;
+    float: left;
+    margin-right: 36px;
+}
+.onestepcheckout-threecolumns .onestepcheckout-column-right {
+    width: 287px;
+    float: left;
+}
+
+/* Global */
+li span.required,
+.required em {
+	color: #AF1C1C;
+	padding: 0 3px 0 0;
+	float: left;
+}
+
+/* Billing Address List */
+#billing_address_list li {
+	clear: left;
+	float: left;
+	margin: 0 0 9px 0;
+	width: 100%;
+}
+#billing_address_list label {
+	float: left;
+	width: 111px;
+	margin: 0 10px 0 0;
+	padding: 2px 0 0;
+	line-height: 1.66;
+}
+#billing_address_list input {
+	float: right;
+	width: 200px;
+}
+
+#billing_address_list .input-address input:nth-child(n+3) {
+	margin: 10px 0 0 0;
+	clear: both;
+}
+.input-different-shipping {
+	clear: both;
+	padding: 12px 0 0;
+}
+#billing_address_list select {
+    width: 209px;
+}
+#billing_address_list .sbHolder {
+	width: 184px;
+}
+#billing_address_list .sbOptions li {
+	width: auto;
+	float: none;
+	margin: 0 0 3px 0;
+}
+
+/* Shipping Method */
+.onestepcheckout-shipping-method-block {
+    margin-top: 10px;
+}
+.onestepcheckout-shipping-method {
+    margin-bottom: 50px;
+}
+
+.payment-methods dd,
+.payment-methods dt {
+	font-size: 1em;
+}
+.payment-methods li {
+	clear: left;
+	float: left;
+	margin: 0 0 17px 0;
+	width: 100%;
+	position: relative;
+}
+.payment-methods li.joined_lis {
+	margin: 12px 0 4px;
+}
+.payment-methods label {
+	padding: 0 0 3px;
+	margin: 0;
+    width: 100%;
+}
+.payment-methods .input-box {
+    width: 100%;
+}
+.payment-methods input,
+.payment-methods .form-list .input-text {
+	width: 254px;
+    margin: 0;
+}
+.payment-methods select {
+	width: 263px;
+}
+.payment-methods .sbHolder {
+	width: 259px;
+	padding-right: 0;
+}
+.payment-methods .sbOptions {
+    width: 262px;
+}
+.payment-methods .sbOptions li {
+	width: auto;
+	float: none;
+	margin: 0 0 3px 0;
+	position: relative;
+}
+
+.payment-methods .v-fix  {
+	margin: 0 4px 0 0;
+	float: left;
+}
+.payment-methods .v-fix select {
+	width: 129px;
+}
+.payment-methods .v-fix:last-child {
+	margin-right: 0;
+}
+.payment-methods .v-fix .sbHolder {
+	width: 125px;
+}
+.payment-methods .v-fix .sbOptions {
+    width: 116px;
+}
+
+.cvv-what-is-this {
+	position: absolute;
+	right: 0;
+	top: 1px;
+}
+
+
+/* Order review Stage */
+.onestepcheckout-summary {
+	margin: 0 0 28px 0;
+}
+table.onestepcheckout-summary {
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 15px 0;
+}
+.onestepcheckout-summary h2 {
+	font-size: 1em;
+	margin: 0;
+}
+
+.onestepcheckout-summary th.name {
+	text-align: left;
+}
+.onestepcheckout-summary th.total,
+.onestepcheckout-summary td.total,
+.onestepcheckout-summary td.value {
+	text-align: right;
+	padding-right: 0;
+}
+
+.onestepcheckout-summary .grand-total {
+	border-top: 2px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.onestepcheckout-summary .grand-total td {
+	font-size: 1.8em;
+	padding: 0;
+}
+
+/* Coupons */
+.onestepcheckout-coupons {
+	overflow: hidden;
+	margin: 0 0 50px 0;
+}
+.onestepcheckout-coupons label {
+	font-size: 1.3em;
+}
+#onestepcheckout-coupon-add {
+	float: left;
+}
+#id_couponcode {
+	float: left;
+	margin: 0 6px 0 0;
+    width: 168px;
+}
+
+/* Place order button */
+
+.onestepcheckout-place-order-wrapper {
+	clear: both;
+}
+#onestepcheckout-place-order {
+	float: right;
+	font-size: 1.5em;
+    height: 42px;
+    width: 200px;
+}
+
+
+
+
+/*
 ol.checkout-agreements {
     margin-top: 10px;
 }
@@ -14,12 +283,6 @@ ol.checkout-agreements {
 .onestepcheckout-extraproducts li {
     padding: 2px 0;
 }
-
-/* Button CSS */
-
-.onestepcheckout-button:hover { background-color: #111; color: #fff; }
-.onestepcheckout-button:active { top: 1px; }
-.small.onestepcheckout-button, .small.onestepcheckout-button:visited { font-size: 11px; }
 
 .onestepcheckout-place-order-loading {
     padding-top: 10px;
@@ -55,17 +318,7 @@ ul.onestepcheckout-custom-options {
     width: 200px;
 }
 
-#onestepcheckout-form label {
-    font-weight: normal !important;
-}
 
-.onestepcheckout-summary,.onestepcheckout-totals {
-    border-collapse: collapse;
-}
-
-.onestepcheckout-summary th,.onestepcheckout-summary,.onestepcheckout-summary td,.onestepcheckout-totals td {
-    padding: 9px 0;
-}
 
 .onestepcheckout-summary th {
     border-bottom: 1px solid #BEBCB7;
@@ -77,40 +330,8 @@ ul.onestepcheckout-custom-options {
     border-bottom: 1px solid #BEBCB7;
 }
 
-p.onestepcheckout-description {
-    font-size: 12px;
-    font-weight: bold;
-    margin: 3px 0;
-}
 
-div.onestepcheckout-threecolumns {
-    margin-top: 10px;
-}
 
-div.onestepcheckout-threecolumns h1 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-div.onestepcheckout-threecolumns div.onestepcheckout-column-left {
-    width: 300px;
-    float: left;
-    margin-right: 50px;
-    padding-top: 15px;
-}
-
-div.onestepcheckout-threecolumns div.onestepcheckout-column-middle {
-    width: 266px;
-    float: left;
-    margin-right: 42px;
-    padding-top: 15px;
-}
-
-div.onestepcheckout-threecolumns div.onestepcheckout-column-right {
-    width: 287px;
-    float: left;
-    padding-top: 15px;
-}
 
 p.onestepcheckout-login-link {
     padding-top: 5px;
@@ -220,17 +441,6 @@ div.checkoutcontainer div.input-error input,div.checkoutcontainer div.input-erro
     border: 1px solid red !important;
 }
 
-div.checkoutcontainer div.input-different-shipping {
-    margin-top: 10px;
-}
-
-div.checkoutcontainer div.input-address-short,div.checkoutcontainer div.input-firstname,
-div.checkoutcontainer div.input-lastname,div.checkoutcontainer div.input-email,
-div.checkoutcontainer div.input-telephone,div.checkoutcontainer div.input-company,
-div.checkoutcontainer div.input-fax,div.checkoutcontainer div.input-password {
-    width: 150px;
-    float: left;
-}
 
 .validation-advice {
     clear: none;
@@ -242,20 +452,12 @@ div.checkoutcontainer div.input-fax,div.checkoutcontainer div.input-password {
     letter-spacing: -0.2px;
 }
 
-span.validation-passed, div.validation-passed {
+.validation-passed {
     padding-right: 0;
 }
 
 div.checkoutcontainer li.taxvat .input-text {
     width: 83% !important;
-}
-
-div.checkoutcontainer div.input-address-short .input-text, div.checkoutcontainer div.input-firstname .input-text,
-div.checkoutcontainer div.input-lastname .input-text,div.checkoutcontainer div.input-email .input-text,
-div.checkoutcontainer div.input-telephone .input-text,div.checkoutcontainer div.input-company .input-text,
-div.checkoutcontainer div.input-fax .input-text,div.checkoutcontainer div.input-password .input-text
-{
-    width: 128px;
 }
 
 div.checkoutcontainer div.input-address,div.checkoutcontainer div.input-city,div.checkoutcontainer li.taxvat div.input-box
@@ -309,15 +511,16 @@ div.checkoutcontainer div.input-region select {
     margin-top: 7px;
 }
 
-p.checkout-choose-payment-method,p.checkout-choose-shipping-method {
+.checkout-choose-payment-method,
+.checkout-choose-shipping-method {
     margin-top: 1em;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-p.checkout-choose-payment-method {
-    margin-top: 2em !important;
+.checkout-choose-payment-method {
+    margin-top: 2em;
 }
 
 .payment-methods dd {
@@ -328,11 +531,10 @@ p.checkout-choose-payment-method {
     padding: 0;
 }
 
-div.onestepcheckout-shipping-method {
-    margin-bottom: 90px;
-}
 
-div.loading-ajax, div.loading-ajax-login {
+
+.loading-ajax, 
+.loading-ajax-login {
     height: 50px;
     text-align: center;
     background-image: url(images/ajax-loader.gif);
@@ -340,26 +542,9 @@ div.loading-ajax, div.loading-ajax-login {
     background-position: center center;
 }
 
-p.onestepcheckout-numbers {
-    background-repeat: no-repeat;
-    color: #404040;
-    text-transform: uppercase;
-    padding-top: 6px;
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
 
-div.onestepcheckout-skin-magento .onestepcheckout-numbers {
-    padding-top: 0px !important;
-    text-transform: capitalize !important;
-    font-size: 13px !important;
-    padding-bottom: 3px;
-}
-
-/* Popup CSS */
 #onestepcheckout_popup_overlay_iframe {
-    z-index: 100000;
+    z-index: 9999;
     background-color: black;
     opacity: 0.8;
     filter: alpha(opacity =   80);
@@ -446,7 +631,6 @@ div.onestepcheckout-skin-magento .onestepcheckout-numbers {
     vertical-align: middle !important;
 }
 
-/* Popup CSS (login link) */
 #onestepcheckout-login-popup {
     width: 482px;
     position: absolute;
@@ -504,7 +688,6 @@ div.onestepcheckout-comments textarea {
     width: 95%;
 }
 
-/* onestepcheckout-twocolumns */
 .onestepcheckout-two-columns .onestepcheckout-column-left {
     width: 47%;
     float: left;
@@ -707,14 +890,6 @@ div.onestepcheckout-comments textarea {
     text-align:left;
 }
 
-.onestepcheckout-number-block {
-    background: #666;
-    color: #fff;
-    font-size: 14px;
-    padding: 4px 8px;
-    margin: 0 13px 0 0;
-}
-
 .onestepcheckout-skin-magento label {
     font-size: 11px;
     margin: 15px 0 8px 0;
@@ -738,10 +913,6 @@ div.onestepcheckout-comments textarea {
     padding: 2px;
     position: relative;
     z-index: 10;
-}
-
-.onestepcheckout-shipping-method-block {
-    margin-top: 10px;
 }
 
 .onestepcheckout-shipping-method-block .form-list .input-box {
@@ -804,3 +975,5 @@ div.onestepcheckout-comments textarea {
 .checkoutcontainer .payment-methods .input-box input.validate-cc-number {
     width: 248px!important;
 }
+
+*/
