@@ -5,6 +5,7 @@ jQuery(function() {
 	showHide('cartPanel', 'cartBtn');
 	showHide2('search_mini_form', 'searchReveal');
 	showHide2('fx-converter', 'currencyConvertor');
+	showHide2('ship-estimate', 'ship-estimate-open');
 	menuCurrentHighlight();
 	removeDefaultOption();
 	dropDownCountries();

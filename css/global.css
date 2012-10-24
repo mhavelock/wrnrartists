@@ -111,6 +111,9 @@ h4, h5, h6 {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
+#storeSwitcherOptions { 
+	display: none; /* Remove for accessibility */
+}
 #storeSwitcherDD:hover,
 #storeSwitcherDD:focus {
 	background-position: 105px -18px;
@@ -155,6 +158,9 @@ h4, h5, h6 {
 #storeSwitcherDD .en_GB {
 	background-image: url(../img/flags/24/UnitedKingdom.png);
 }
+#storeSwitcherDD .en_EU {
+	background-image: url(../img/flags/24/EuropeanUnion.png);
+}
 
 #storeSwitcherOptions {
 	position: absolute;
@@ -197,6 +203,33 @@ h4, h5, h6 {
 }
 #languageSelect li.language-en_GB {
 	background-image: url(../img/flags/16/UnitedKingdom.png);
+}
+#languageSelect li.language-eu_EU {
+	background-image: url(../img/flags/16/EuropeanUnion.png);
+}
+
+.ss2 #languageSelect li {
+    background-position: 49px 10px;
+    clear: left;
+    float: left;
+    padding: 12px 0 8px;
+    width: 100%;
+}
+.ss2 #languageSelect li em {
+	width: 110px;
+	display: block;
+	float: left;
+}
+.ss2 #languageSelect li span {
+    display: block;
+    float: left;
+    width: 100%;
+}
+.ss2 #languageSelect li span span {
+    width: auto;
+}
+.ss2 #storeSwitcherOptions {
+	width: 158px;
 }
 
 .switcher-currency {
@@ -244,6 +277,12 @@ h4, h5, h6 {
 	background-color: #ededed;
 }
 
+
+.ss2 #currencyConvertor {
+	background-position: 100% 12px;
+    text-align: right;
+    width: 127px;
+}
 /*
 #fx-converter {
 	clear: both;
@@ -1008,21 +1047,7 @@ nav .vert li a:focus {
 .form-list li.control-wide-label label {
 	width: 200px;
 }
-p.required {
-	display: none;
-}
-.form-list .reqd {
-	position: absolute;
-	font-size: 91.666%;
-	color: #666;
-	left: 409px;
-    top: 8px;
-}
-.form-list .validation-error .reqd,
-.form-list .validation-success .reqd {
-	display: none;
-}
-.form-list .add-field {
+.form-list .input-text.further-field {
 	margin-left: 150px;
 }
 /*---  Check list --- */
@@ -1433,7 +1458,131 @@ div.validation-error select {
 	background: -webkit-gradient(linear, left top, left bottom, from(#25f14b), to(#33b44b));
 	background: -moz-linear-gradient(top, #25f14b, #33b44b);
 }
+.btn-green {
+  display: inline-block;
+  outline: none;
+  background: #0aad6e;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 #0c7a69;
+  position: relative;
+  margin-bottom: 2px;
+  padding: 8px 14px;
+  border: 1px solid #00c99a;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 0 #0c7a69;
+  -moz-box-shadow: 0 2px 0 #0c7a69;
+  box-shadow: 0 2px 0 #0c7a69;
+}
+.btn-green:hover, 
+.btn-green:focus {
+	background: #30c185; 
+    border: 1px solid #00c99a;
+    -webkit-box-shadow: inset 0 0 3px #1aad8b, 0 2px 0 #00c99a;
+    -moz-box-shadow: inset 0 0 3px #1aad8b, 0 2px 0 #00c99a;
+    box-shadow: inset 0 0 3px #1aad8b, 0 2px 0 #00c99a; 
+}
+.btn-green:hover, 
+.btn-green:active {
+    cursor: pointer; 
+}
+.btn-green:active {
+    background: #40c994;
+    top: 1px;
+    -webkit-box-shadow: 0 1px 0 #21b1ce;
+    -moz-box-shadow: 0 1px 0 #21b1ce;
+    box-shadow: 0 1px 0 #21b1ce; 
+}
 
+
+.btn-blue {
+  display: inline-block;
+  outline: none;
+  background: #00acce;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 #1c9bdb;
+  position: relative;
+  margin-bottom: 2px;
+  padding: 8px 14px;
+  border: 1px solid #2db0fc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 0 #1c9bdb;
+  -moz-box-shadow: 0 2px 0 #1c9bdb;
+  box-shadow: 0 2px 0 #1c9bdb;
+ 
+}
+.btn-blue:hover, 
+.btn-blue:focus {
+	background: #21b1ce; 
+    border: 1px solid #145e9b;
+    -webkit-box-shadow: inset 0 0 3px #2bc4e2, 0 2px 0 #145e9b;
+    -moz-box-shadow: inset 0 0 3px #2bc4e2, 0 2px 0 #145e9b;
+    box-shadow: inset 0 0 3px #2bc4e2, 0 2px 0 #145e9b; 
+}
+.btn-blue:hover, 
+.btn-blue:active {
+    cursor: pointer; 
+}
+.btn-blue:active {
+    background: #40c994;
+    top: 1px;
+    -webkit-box-shadow: 0 1px 0 #21b1ce;
+    -moz-box-shadow: 0 1px 0 #21b1ce;
+    box-shadow: 0 1px 0 #21b1ce; 
+}
+
+
+.btn-red {
+  display: inline-block;
+  outline: none;
+  background: #fc695a;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 #c65145;
+  position: relative;
+  margin-bottom: 2px;
+  padding: 8px 14px;
+  border: 1px solid #c65145;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 0 #c65145;
+  -moz-box-shadow: 0 2px 0 #c65145;
+  box-shadow: 0 2px 0 #c65145;
+}
+.btn-red:hover, 
+.btn-red:focus {
+    background: #fc786b; 
+    border: 1px solid #cd5144;
+    -webkit-box-shadow: inset 0 0 3px #ebada6, 0 2px 0 #cd5144;
+    -moz-box-shadow: inset 0 0 3px #ebada6, 0 2px 0 #cd5144;
+    box-shadow: inset 0 0 3px #ebada6, 0 2px 0 #cd5144; 
+}
+.btn-red:hover, 
+.btn-red:active {
+    cursor: pointer; 
+}
+.btn-red:active {
+	background: #fc7062;
+    top: 1px;
+    -webkit-box-shadow: 0 1px 0 #d86155;
+    -moz-box-shadow: 0 1px 0 #d86155;
+    box-shadow: 0 1px 0 #d86155; 
+}
 
 
 /* Select Box Replacement 
@@ -1442,7 +1591,6 @@ div.validation-error select {
 	height: 18px;
 	position: relative;
 	width: 89px;
-	text-transform: uppercase;
 	padding: 4px 20px 3px 3px;
 	margin: 0;
 	line-height: 1.2;
@@ -1462,6 +1610,7 @@ div.validation-error select {
 	overflow: hidden;
 	position: absolute;
 	text-indent: 5px;
+	color: #666;
 	top: 0;
 	text-decoration: none;
 	padding: 1px 20px 0 0;
@@ -1524,7 +1673,9 @@ div.validation-error select {
 	background-color: #3C3C3C;
 	border: solid 1px #515151;
 }
-.sbHolderDisabled .sbToggle{ opacity: 0.4; }
+.sbHolderDisabled .sbToggle { 
+	opacity: 0.4; 
+}
 .sbOptions{
 	background-color: #ccc;
 	border: solid 1px #ededed;
@@ -1592,6 +1743,250 @@ div.validation-error select {
 }
 
 
+/* Placehoder Form */
+
+.flr li,
+.phForm li {
+	clear: left;
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.phForm label {
+	float: left;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	margin: 0;
+	padding: 0;
+    width: 250px;
+}
+.flr label,
+.phForm .select label {
+	padding: 7px 0 0 0;
+}
+.phForm em {
+	float: left;
+	padding: 0 6px 0 0;
+}
+.flr input[type=text],
+.phForm input[type=text],
+.flr input[type=password],
+.phForm input[type=password] {
+	float: left;
+	padding: 9px 7px 6px 7px;
+	padding: 5px 7px 4px;
+	border: 1px solid #bbb;
+	background: whiteSmoke;
+	font: inherit;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 #bbb;
+	-moz-box-shadow: inset 0 1px 0 #bbb;
+	box-shadow: inset 0 1px 0 #bbb;
+}
+.flr input[type=text],
+.phForm input[type=text],
+.flr input[type=password],
+.phForm input[type=password],
+x:-moz-any-link {
+	padding: 9px 7px 6px 7px;
+}
+.phForm input::-webkit-input-placeholder,
+.flr input::-webkit-input-placeholder {
+	color: #888;
+}
+.phForm input[type=text]:-moz-placeholder,
+.flr input[type=text]:-moz-placeholder {
+	color: #888;
+}
+.phForm input[type=text]:focus::-webkit-input-placeholder,
+.flr input[type=text]:focus::-webkit-input-placeholder {
+	color: #ccc;
+}
+.phForm input[type=text]:focus:-moz-placeholder,
+.flr input[type=text]:focus:-moz-placeholder {
+	color: #ccc;
+}
+
+.phForm input[type=text]:focus,
+.flr input[type=text]:focus,
+.phForm input[type=password]:focus,
+.flr input[type=password]:focus {
+	background: #fff;
+	border: 1px solid #74C2E8;
+	-webkit-background-clip: padding-box;
+	/* fix WebKit background bleed on border-radius */
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 0 #74C2E8;
+	-moz-box-shadow: inset 0 1px 0 #74C2E8;
+	/* FF3.5+ */
+	-webkit-box-shadow: inset 0 1px 0 #74C2E8;
+	/* Saf3.0+, Chrome */ 
+}
+.phForm input[type=text].changed,
+.flr input[type=text].changed,
+.phForm input[type=password].changed,
+.flr input[type=password].changed,
+.phForm .sbHolder.changed {
+	background: #fff;
+	border: 1px solid #56ce7a;
+	box-shadow: 0 1px 0 #56ce7a;
+	-moz-box-shadow: 0 1px 0 #56ce7a;
+	-webkit-box-shadow: 0 1px 0 #56ce7a;
+}
+.phForm .sbHolder.changed .sbSelector {
+    color: #222;
+}
+.phForm select,
+.flr select {
+    padding: 8px 7px;
+    font-size:;
+    width: 238px;
+    margin: 0 0 12px 0;
+}
+.phForm .sbHolder,
+.flr .sbHolder {
+	border: 1px solid #ccc;
+	background: whiteSmoke;
+	border: 1px solid #bbb;
+	-webkit-background-clip: padding-box;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 #bbb;
+	-moz-box-shadow: inset 0 1px 0 #bbb;
+	box-shadow: inset 0 1px 0 #bbb;
+	height: 23px;
+	width: 211px;
+	margin: 0 0 12px 0;
+}
+.phForm .sbSelector,
+.flr .sbSelector {
+	height: 27px;
+    line-height: 27px;
+    padding: 4px 20px 0 0;
+    text-indent: 8px;
+    width: 214px;
+}
+.phForm .sbOptions,
+.flr .sbOptions {
+    width: 232px;
+}
+.phForm .sbOptions li,
+.flr .sbOptions li {
+	width: auto;
+	float: none;
+	margin: 0;
+}
+.phForm .sbToggle,
+.flr .sbToggle {
+    top: 3px;
+}
+
+.phForm button,
+.flr button,
+.btn-black {
+  display: inline-block;
+  outline: none;
+  background: #444;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 #222;
+  position: relative;
+  margin-bottom: 2px;
+  padding: 8px 16px;
+  border: 1px solid #111;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 0 #222;
+  -moz-box-shadow: 0 2px 0 #222;
+  box-shadow: 0 2px 0 #222;
+}
+.phForm button,
+.flr button,
+.btn-black {
+  display: inline-block;
+  outline: none;
+  background: #444;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 #222;
+  position: relative;
+  margin-bottom: 2px;
+  padding: 9px 16px;
+  border: 1px solid #111;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 0 #222;
+  -moz-box-shadow: 0 2px 0 #222;
+  box-shadow: 0 2px 0 #222;
+}
+.phForm button span,
+.flr button span {
+    padding: 0;
+}
+.phForm button:hover,
+.phForm button:focus,
+.flr button:hover,
+.flr button:focus,
+.btn-black:hover, 
+.btn-black:focus {
+    background: #aaa; 
+    border: 1px solid #999;
+    -webkit-box-shadow: inset 0 0 3px #444, 0 2px 0 #111;
+    -moz-box-shadow: inset 0 0 3px #444, 0 2px 0 #111;
+    box-shadow: inset 0 0 3px #444, 0 2px 0 #111; 
+}
+.phForm button:hover,
+.phForm button:active,
+.flr button:hover,
+.flr button:active,
+.btn-black:hover, 
+.btn-black:active {
+    cursor: pointer; 
+}
+.phForm .btn-black:active,
+.flr .btn-black:active,
+.btn-black:active {
+	background: #bbb;
+    top: 1px;
+    -webkit-box-shadow: 0 1px 0 #000;
+    -moz-box-shadow: 0 1px 0 #000;
+    box-shadow: 0 1px 0 #000; 
+}
+
+
+
+.formSelectInoperative {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
 /* Footer */
 .footer {
 	text-align: center;
@@ -1636,7 +2031,7 @@ div.validation-error select {
 }
 #cookiePolicy .close {
 	float: right;
-    padding: 3px 3px 3px 28px;
+    padding: 3px 3px 3px 17px;
 	background: #999 url(../img/icons/cross_sml_white.png) no-repeat 2px 2px;
 	border: 1px solid #ccc;
 	-webkit-border-radius: 4px;
