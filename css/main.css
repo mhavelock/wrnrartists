@@ -1286,6 +1286,13 @@
 #ship-estimate-open:focus {
 	background-position: 0 -80px;
 }
+#ship-estimate-open.triggered {
+	background-position: 0 -160px;
+}
+#ship-estimate-open.triggered:hover,
+#ship-estimate-open.triggered:focus {
+	background-position: 0 -240px;
+}
 /* Coupons */
 .deals {
 	float: left;
