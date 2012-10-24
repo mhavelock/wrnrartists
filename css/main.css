@@ -1116,7 +1116,7 @@
 	box-shadow: inset 0 6px 6px -6px rgba(0,0,0,0.1);
 }
 #shopping-cart-table th {
-	background-color: #ececec;
+	background-color: #efefef;
 }
 #shopping-cart-table th,
 #shopping-cart-table td {
@@ -1263,7 +1263,7 @@
 .shipping {
 	float: right;
 	padding: 20px;
-	background: #ddd;
+	background: #efefef;
 	width: 342px;
 	position: relative;
 	min-height: 70px;
