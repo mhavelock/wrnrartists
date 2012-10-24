@@ -1142,9 +1142,14 @@
 }
 
 #shopping-cart-table .product-name {
-    font-size: 1em;
-    padding: 8px;
+    font-size: 1.1em;
     text-align: left;
+    margin: 6px 0 9px 0;
+}
+#shopping-cart-table .prodNameTD p {
+	font-size: 1em;
+	margin: 0;
+	font-weight: bold;
 }
 #shopping-cart-table .item-options dt,
 #shopping-cart-table .item-options dd {
