@@ -59,7 +59,7 @@ h4, h5, h6 {
 }
 
 #logo {
-	height: 130px;
+	height: 150px;
 	width: 100%;
 	margin: 0;
 }
@@ -74,7 +74,7 @@ h4, h5, h6 {
 #logo a, #logo span {
 	display: block;
 	width:650px;
-	height:100px;
+	height:120px;
 	background: white;
 }
 #logo a {
@@ -98,13 +98,12 @@ h4, h5, h6 {
 	margin: 0;
 	position: relative;
 	padding: 6px 10px;
-	border-right: 1px solid #CCC;
-	width: 131px;
+	width: 112px;
     float: left;
     z-index: 2;
 }
 #storeSwitcherDD {
-	background: #fff url(../img/icons/arrow_toggle.png) no-repeat 105px 12px;
+	background: #fff url(../img/icons/arrow_toggle.png) no-repeat 92px 12px;
 	overflow: hidden;
     padding: 2px 6px;
     -webkit-border-radius: 3px;
@@ -116,14 +115,14 @@ h4, h5, h6 {
 }
 #storeSwitcherDD:hover,
 #storeSwitcherDD:focus {
-	background-position: 105px -18px;
+	background-position: 92px -18px;
 }
 #storeSwitcherDD.active {
-	background-position: 105px -49px;
+	background-position: 92px -49px;
 }
 #storeSwitcherDD.active:hover,
 #storeSwitcherDD.active:focus {
-	background-position: 105px -79px;
+	background-position: 92px -79px;
 }
 #storeSwitcherDD span.language {
     background-position: 0 0;
@@ -216,7 +215,7 @@ h4, h5, h6 {
     width: 100%;
 }
 .ss2 #languageSelect li em {
-	width: 110px;
+	width: 82px;
 	display: block;
 	float: left;
 }
@@ -229,7 +228,7 @@ h4, h5, h6 {
     width: auto;
 }
 .ss2 #storeSwitcherOptions {
-	width: 158px;
+	width: 160px;
 }
 
 .switcher-currency {
@@ -309,6 +308,7 @@ h4, h5, h6 {
 
 /* Search Reveal Button */
 
+/*
 #searchReveal {
 	width: 28px;
 	height: 28px;
@@ -330,6 +330,8 @@ h4, h5, h6 {
 #searchReveal.triggered:focus {
 	background-position: 0 -235px;
 }
+*/
+
 
 /* Cart / Account */
 .headerFunctions {
@@ -366,7 +368,7 @@ em.basket_icon {
 .arrowLink {
 	background: transparent url(../img/icons/arrow_r.png) no-repeat 88px 14px;
 	display: block;
-	width: 85px;
+	width: 86px;
 	padding: 13px 9px;
 	float: left;
 }
@@ -376,37 +378,30 @@ em.basket_icon {
 	text-decoration: none;
 }
 
+
+
 #chkOutBtn {
 	width: 104px;
 	float: left;
 	font-size: 1.3em;
 	font-weight: bold;
-	border-bottom: 1px solid #FFFFFF;
 }
 #chkOutBtn a {
 	padding: 18px 12px 13px 10px;
 	width: 82px;
 	background-position: 88px 19px;
+	border-bottom: 1px solid #fff;
 }
 #chkOutBtn a:hover,
 #chkOutBtn a:focus {
 	background-position: 88px -12px;
+	border-bottom: 1px solid #777;
 }
 #myAccountLink {
 	font-size: 1.3em;
-	border-right: 1px solid #ccc;
-	float: left;
+	float: right;
+	border-left: 1px solid #ccc;
 }
-#myAccountLink a {
-	width: 100px;
-	background-position: 98px 14px;
-}
-#myAccountLink a:hover,
-#myAccountLink a:focus {
-	background-position: 98px -16px;
-}
-
-
 
 #cartBtn {
 	line-height: 24px;
@@ -456,8 +451,54 @@ em.basket_icon {
 #cartBtn a:hover {
 	background: #ccc;
 	text-decoration: none;
+	border-bottom: 1px solid #777;
 }
 
+.mc2 .switches {
+	width: 106px;
+}
+.mc2 #storeSwitcherDD {
+    background-position: 89px 12px;
+}
+.mc2 .arrowLink {
+    padding: 13px 11px;
+}
+.mc2 #baseLinks {
+	clear: left;
+}
+
+.mc2 #cartBtn {
+    width:339px;
+    border: none
+}
+.mc2 #cartBtn a {
+    width: 331px;
+    border-right: none;
+    background-position: 320px 19px;
+    width: 329px;
+}
+.mc2 #cartBtn a:hover,
+.mc2 #cartBtn a:focus {
+    background: #ccc url(../img/icons/arrow_r.png) no-repeat 320px -12px;
+}
+.mc2 #chkOutBtn a {
+    background-position: 84px 14px;
+    border: none;
+    padding: 13px;
+    width: 77px;
+    border-left: 1px solid #ccc;
+}
+.mc2 #myAccountLink {
+    border: none;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+.mc2 #search_mini_form input#search {
+    width: 264px;
+}
+.mc2 #cartPanel {
+    width: 339px;
+}
 
 /* --- Shopping bag --- */
 #topCart {
@@ -696,8 +737,6 @@ em.basket_icon {
 	z-index: 1;
 	clear: both;
 	float: left;
-	border-top: 1px solid #ccc;
-	padding: 10px 0 0 0;
 }
 #search_mini_form input#search {
 	float: left;
