@@ -366,22 +366,20 @@ em.basket_icon {
 }
 
 .arrowLink {
-	background: transparent url(../img/icons/arrow_r.png) no-repeat 88px 14px;
+	background: transparent url(../img/icons/arrow_r.png) no-repeat 100% 14px;
 	display: block;
-	width: 86px;
 	padding: 13px 9px;
 	float: left;
 }
 .arrowLink:hover,
 .arrowLink:focus {
-	background: #ccc url(../img/icons/arrow_r.png) no-repeat 90px -16px;
+	background: #ccc url(../img/icons/arrow_r.png) no-repeat 100% -16px;
 	text-decoration: none;
 }
 
 
 
 #chkOutBtn {
-	width: 104px;
 	float: left;
 	font-size: 1.3em;
 	font-weight: bold;

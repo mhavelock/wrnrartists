@@ -1,6 +1,5 @@
 var $j = jQuery.noConflict();
 jQuery(function() {  
-
 	html5placeholder();
 	showHide('cartPanel', 'cartBtn');
 	//showHide2('search_mini_form', 'searchReveal');
